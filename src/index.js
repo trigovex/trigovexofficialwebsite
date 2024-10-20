@@ -1,13 +1,50 @@
 import React from 'react';
 import ReactDOM from 'react-dom/client';
 import './index.css';
-import App from './App';
 import reportWebVitals from './reportWebVitals';
+import Timeline from './Timeline';
+import './Timeline.css';
+import ServiceStats from './ServiceStats';
+import './ServiceStats.css';
+import TestimonialCarousel from './TestimonialCarousel';
+import Services from './Services';
+import Banner1 from './Banner1';
+import AboutCeo from './AboutCeo';
+import CarouselComponent from './CarouselComponent';
+import NavigationBar from './NavigationBar';
+import Footer from './Footer';
+import BusinessTypes from './BusinessTypes';
+import './BusinessTypes.css';
+import MeetingScheduler from './MeetingScheduler';
+import MeetingForm from './MeetingForm'; // Import the new form page
+import { BrowserRouter as Router, Route, Routes } from 'react-router-dom';
 
 const root = ReactDOM.createRoot(document.getElementById('root'));
+
 root.render(
   <React.StrictMode>
-    <App />
+    <Router>
+      <NavigationBar />
+      <div className="content">
+        <Routes>
+          {/* Define routes for different components/pages */}
+          <Route path="/" element={<>
+            <Banner1 />
+            <Timeline />
+            <Services />
+            <CarouselComponent />
+            <ServiceStats />
+            <BusinessTypes />
+            <TestimonialCarousel />
+            <AboutCeo />
+            <MeetingScheduler />
+          </>} />
+          {/* Separate route for MeetingForm */}
+          <Route path="/meeting-form" element={<MeetingForm />} />
+        </Routes>
+      </div>
+      <Footer />
+    </Router>
   </React.StrictMode>
 );
 

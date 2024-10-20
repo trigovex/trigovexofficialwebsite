@@ -1,0 +1,213 @@
+/* General Card Styling */
+.scheduler-card {
+    background-color: #ffffff;
+    border: 1px solid #dddddd;
+    border-radius: 12px;
+    padding: 20px;
+    box-shadow: 0 4px 12px rgba(0, 0, 0, 0.05);
+}
+
+/* Title Styling */
+.title {
+    font-size: 30px;
+    font-family: "Poppins", sans-serif;
+    font-weight: bold;
+    color: #333;
+}
+
+.duration {
+    font-size: 16px;
+    color: black;
+    margin-bottom: 20px;
+}
+
+/* Custom Calendar Styles */
+.custom-calendar {
+    width: 100%;
+    max-width: 600px; /* Increased maximum width for the calendar */
+    font-family: "Poppins", sans-serif;
+}
+
+.react-datepicker {
+    border: none;
+}
+
+.react-datepicker__header {
+    background-color: white;
+    border-bottom: none;
+    border-radius: 12px 12px 0 0;
+}
+
+.react-datepicker__day-name,
+.react-datepicker__day {
+    font-family: "Poppins", sans-serif;
+    font-size: 14px;
+    color: #333;
+}
+
+.react-datepicker__day--selected {
+    background-color: #09b875;
+    color: white;
+    border-radius: 50%;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.2);
+}
+
+.react-datepicker__day--today {
+    font-weight: bold;
+    color: #ff7f50;
+}
+
+.react-datepicker__day:hover {
+    background-color: #09b875;
+    color: white;
+}
+
+/* Time Slot Styles */
+.time-slot-section {
+    margin-top: 20px;
+    width: 50%; /* Decreased width of time slot section */
+    margin: auto; /* Center the time slot section */
+}
+
+.time-title {
+    font-family: "Poppins", sans-serif;
+    font-weight: bold;
+    font-size: 18px;
+    color: #333;
+    margin-bottom: 10px;
+}
+
+.list-group-item {
+    font-family: "Poppins", sans-serif;
+    font-size: 14px; /* Keep font size for better fit */
+    color: #555;
+    background-color: white;
+    cursor: pointer;
+    padding: 10px;
+    border-radius: 8px;
+    margin-bottom: 10px;
+    transition: background-color 0.3s, box-shadow 0.3s;
+}
+
+.list-group-item:hover {
+    background-color: #bef5e0; /* Hover effect for time slots */
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+}
+
+.active-time {
+    background-color: #09b875;
+    color: white;
+    font-weight: bold;
+    box-shadow: 0 4px 12px rgba(0, 0, 0, 0.2);
+}
+
+.confirm-btn {
+    font-family: "Poppins", sans-serif;
+    font-size: 16px;
+    padding: 10px 20px;
+    border-radius: 8px;
+    border: none;
+    background-color: #09b875;
+    color: white;
+    cursor: pointer;
+    transition: background-color 0.3s;
+}
+
+.confirm-btn:hover {
+    background-color: #08a763; /* Darker shade for hover effect */
+}
+
+.confirm-btn:disabled {
+    background-color: #cccccc;
+    cursor: not-allowed;
+}
+
+/* Form Section Styles */
+.form-section {
+    background-color: #f9f9f9;
+    border: 1px solid #dddddd;
+    border-radius: 8px;
+    padding: 15px;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+}
+
+.form-group {
+    margin-bottom: 15px;
+}
+
+label {
+    font-family: "Poppins", sans-serif;
+    font-weight: bold;
+    color: #333;
+}
+
+input,
+textarea {
+    font-family: "Poppins", sans-serif;
+}
+
+/* Additional Styling for Layout */
+.calendar-container {
+    background-color: #ffffff;
+    border: 1px solid #dddddd;
+    border-radius: 12px;
+    padding: 20px;
+    box-shadow: 0 4px 12px rgba(0, 0, 0, 0.05);
+}
+
+/* Responsive Design for Mobile */
+@media (max-width: 768px) {
+    .calendar-container {
+        padding: 20px;
+        display: flex;
+        justify-content: center; /* Center calendar in mobile view */
+    }
+
+    .scheduler-card {
+        width: 100%; /* Full width for mobile */
+        max-width: 400px; /* Limit max width to make it readable */
+        margin: 0 auto; /* Center horizontally */
+        padding: 15px; /* Padding for smaller devices */
+    }
+
+    .time-slot-section {
+        width: 100%; /* Full width for time slots on mobile */
+    }
+
+    .confirm-btn {
+        width: 100%;
+    }
+}
+
+/* Maximize Calendar in Desktop View */
+@media (min-width: 768px) {
+    .calendar-container {
+        display: flex;
+        justify-content: center;
+    }
+
+    .custom-calendar {
+        width: 600px; /* Increased calendar size for desktop */
+        height: auto;
+    }
+
+    .scheduler-card {
+        max-width: 700px;
+        margin: 0 auto;
+    }
+}
+
+/* Modal Backdrop and Content Styles */
+.modal-backdrop {
+    background-color: rgba(0, 0, 0, 0.5);
+}
+
+.modal-content {
+    border-radius: 12px;
+    padding: 20px;
+}
+
+.modal-header .close {
+    font-size: 1.5rem;
+    color: #333;
+}

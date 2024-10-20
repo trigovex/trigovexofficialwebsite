@@ -1,0 +1,90 @@
+/* Main card container */
+.services-card {
+    background-color: rgba(255, 255, 255, 0.2); /* Semi-transparent white for glass effect */
+    border-radius: 10px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    padding: 20px;
+    margin: 0 auto;
+    transition: transform 0.3s ease, box-shadow 0.3s ease; /* Smooth transition for zoom-in and shadow */
+    max-width: 100%;
+    position: relative;
+    overflow: hidden;
+    backdrop-filter: blur(10px); /* Apply blur effect for glassmorphism */
+  }
+  
+  /* Set the background color of the parent/container */
+  
+  /* Hover effect for the card */
+  .services-card:hover {
+    transform: scale(1.05); /* Zoom in the entire card */
+    box-shadow: 0 6px 12px rgba(0, 0, 0, 0.2); /* Elevate the shadow effect */
+  }
+  
+  /* Flex container for image and title */
+  .d-flex {
+    display: flex;
+    align-items: center;
+  }
+  
+  /* Image section styling */
+  .image-section {
+    width: 60px;
+    height: 60px;
+    border-radius: 10px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin-right: 15px;
+    margin: 40px;
+  }
+  
+  .body {
+    font-family: 'Poppins', sans-serif;
+  }
+  
+  /* Image styling */
+  .image-section img {
+    width: 100px;
+    height: 100px;
+    margin: 5px;
+  }
+  
+  /* Title section styling */
+  .title-section {
+    font-family: 'Poppins', sans-serif;
+    font-size: 1.3rem;
+    margin: 0;
+    color: #09b875;
+    font-weight: bold;
+  }
+  
+  /* Content section styling (for paragraph and button) */
+  .content-section {
+    margin-top: 15px;
+  }
+  
+  .content-section p {
+    font-family: 'Poppins', sans-serif;
+    font-size: 1.1rem;
+    color: black;
+    margin-bottom: 10px;
+    word-wrap: break-word;
+  }
+  
+  /* Read more button styling */
+  .read-more {
+    font-family: 'Poppins', sans-serif;
+    color: #41d79e;
+    background: none;
+    border: 1px solid #41d79e;
+    border-radius: 20px;
+    padding: 5px 15px;
+    cursor: pointer;
+    transition: background-color 0.3s ease, color 0.3s ease;
+  }
+  
+  .read-more:hover {
+    background-color: #41d79e;
+    color: white;
+  }
+  

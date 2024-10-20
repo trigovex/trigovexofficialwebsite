@@ -1,0 +1,90 @@
+.ceo-title {
+    font-size: 3.2rem;
+    font-weight: 600;
+}
+
+.ceo-description {
+    font-size: 1.1rem;
+    margin-top: 20px;
+    color: black;
+}
+
+.contact-btn {
+    position: relative; /* Position relative for the inner span */
+    overflow: hidden; /* Hide overflowing elements */
+    background-color: #41d79e;
+    border: none;
+    padding: 10px 20px;
+    border-radius: 10px;
+    font-size: 1.2rem;
+    color: white;
+    cursor: pointer;
+    transition: color 0.4s; /* Transition for text color */
+}
+
+.button-text {
+    position: relative; /* Position relative for the text */
+    z-index: 1; /* Ensure text is above the underline */
+}
+
+.button-underline {
+    content: '';
+    position: absolute;
+    bottom: 0;
+    left: 100%; /* Start off-screen to the right */
+    width: 100%;
+    height: 2px; /* Thickness of the underline */
+    background-color: white; /* Color of the underline */
+    transition: left 0.4s; /* Transition for moving left */
+}
+
+.contact-btn:hover .button-underline {
+    left: 0; /* Move the underline to the left */
+}
+
+.contact-btn:hover .button-text {
+    color: #fff; /* Optional: Change text color on hover */
+}
+
+/* Update image parameters */
+.ceo-image {
+    max-width: 100%;  /* Ensures the image is responsive */
+    height: auto;      /* Maintain aspect ratio */
+    min-height: 250px; /* Set a minimum height for the image */
+    margin: 20px 0;   /* Add top and bottom margins to the image */
+    border-radius: 20px; /* Add rounded corners for the image */
+    padding-left: 100px;
+    padding-right: 100px;
+}
+
+/* Media Queries for Responsiveness */
+@media (max-width: 768px) {
+    .ceo-banner {
+        padding: 20px; /* Add some padding for smaller screens */
+        border-radius: 20px; /* Reduce border radius on smaller screens */
+    }
+
+    .ceo-title {
+        font-size: 2.5rem; /* Smaller title font for mobile */
+    }
+
+    .ceo-description {
+        font-size: 1rem; /* Smaller description font for mobile */
+    }
+
+    .contact-btn {
+        font-size: 1rem; /* Smaller button font for mobile */
+        padding: 8px 16px; /* Smaller padding */
+    }
+
+    .ceo-image {
+        min-height: 150px; /* Reduce minimum height on mobile */
+        margin: 10px 0;    /* Less margin on mobile */
+    }
+}
+
+@media (min-width: 768px) {
+    .text-section {
+        padding-left: 120px; /* Set left padding for desktop view */
+    }
+}
