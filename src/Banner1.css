@@ -28,11 +28,22 @@ padding-right: 15px;
 .banner-title {
   font-size: 3.5rem;
   font-weight: 600;
+  line-height: 1.2;
+}
+
+.highlighted-text-wrapper {
+  display: inline-block;
+  height: 60px; /* Fixed height to prevent the container from moving */
+  vertical-align: middle;
 }
 
 .highlighted-text {
-  color: #41d79e; /* Green */
+  color: #41d79e;
+  display: inline-block;
+  white-space: nowrap;
+  overflow: hidden;
 }
+
 
 .banner-description {
   font-size: 1.2rem;

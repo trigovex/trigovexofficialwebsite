@@ -38,8 +38,13 @@ const Banner1 = () => {
             <span>New</span> Beta now available &rarr;
           </div>
           <h1 className="banner-title">
-            #1 in<br/><span className="highlighted-text">{`${words[index].substring(0, subIndex)}`}</span>
-          </h1>
+  #1 in<br />
+  <span className="highlighted-text-wrapper">
+    <span className="highlighted-text">
+      {`${words[index].substring(0, subIndex)}`}
+    </span>
+  </span>
+</h1>
           <p className="banner-description">
             We create experiences that transform brands, grow businesses, and make people's lives better. Let's create something special together.
           </p>
