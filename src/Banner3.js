@@ -12,7 +12,7 @@ const Banner3 = () => {
             <span>Manage,</span>Monitor, and Heal Effortlessly &rarr;
           </div>
           <h1 className="banner-title">
-         <span className="highlighted-text">Hospital</span> Management.
+         <span className="highlighted2-text">Hospital</span> Management.
           </h1>
           <p className="banner-description">
           Our Hospital Management System is a comprehensive solution designed to streamline hospital operations by digitizing patient records, appointment scheduling, billing, and staff management. It enhances efficiency, improves patient care.

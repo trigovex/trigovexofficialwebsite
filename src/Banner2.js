@@ -12,7 +12,7 @@ const Banner2 = () => {
             <span>Scan,</span>Choose, and Pay Instantly &rarr;
           </div>
           <h1 className="banner-title">
-            Menu <span className="highlighted-text">Ordering</span> System.
+            Menu <span className="highlighted1-text">Ordering</span> System.
           </h1>
           <p className="banner-description">
           Our innovative menu ordering system allows customers to conveniently scan a QR code at their table, browse the restaurant’s menu, place their order directly from their phone, and make secure online payments—streamlining the dining experience with ease and efficiency
