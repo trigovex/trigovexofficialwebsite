@@ -1,4 +1,10 @@
 /* Banner1 Component Specific Styles */
+body, html {
+  margin: 0;
+  padding: 0;
+  overflow-x: hidden; /* Prevent horizontal overflow globally */
+}
+
 .app-banner {
   background-image: url('./images/NewGradient1.png');
   background-size: cover;
@@ -8,12 +14,13 @@
   padding-left: 15px;
   padding-right: 15px;
   position: relative; /* Keep the container's position relative */
-  overflow: hidden; /* Prevent the content from exceeding the container */
+  overflow: hidden; /* Prevent content from exceeding the container */
+  max-width: 100%; /* Ensure the banner does not exceed the viewport width */
 }
 
-.app-container-fluid{
-padding-left: 15px;
-padding-right: 15px;
+.app-container-fluid {
+  padding-left: 15px;
+  padding-right: 15px;
 }
 
 .new-tag {
@@ -44,7 +51,6 @@ padding-right: 15px;
   overflow: hidden;
 }
 
-
 .banner-description {
   font-size: 1.2rem;
   margin-top: 20px;
@@ -60,8 +66,6 @@ padding-right: 15px;
   font-size: 1.2rem;
   color: white;
 }
-
-
 
 .user-image {
   width: 40px;
@@ -95,11 +99,13 @@ padding-right: 15px;
     transform: scale(1); /* Zoom out back to normal size */
   }
 }
+
 @media (min-width: 768px) {
   .text-section {
     padding-left: 120px; /* Set left padding for desktop view */
   }
 }
+
 /* Media Queries for Responsiveness */
 @media (max-width: 768px) {
   .app-banner {
@@ -119,5 +125,22 @@ padding-right: 15px;
   .download-btn {
     font-size: 1rem; /* Smaller button font for mobile */
     padding: 8px 16px; /* Smaller padding */
+  }
+
+  .phone-image {
+    margin-top: 10px; /* Adjust top margin on smaller screens */
+  }
+
+  /* Ensure container width does not overflow on smaller screens */
+  .app-container-fluid, 
+  .container-fluid {
+    padding-left: 10px;
+    padding-right: 10px;
+    max-width: 100vw; /* Ensure full width fits inside viewport */
+  }
+
+  .row {
+    margin-left: 0;
+    margin-right: 0;
   }
 }
