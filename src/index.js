@@ -14,6 +14,8 @@ import CarouselComponent from './CarouselComponent';
 import NavigationBar from './NavigationBar';
 import Footer from './Footer';
 import BusinessTypes from './BusinessTypes';
+import Applications from './Applications';
+import './Applications.css';
 import './BusinessTypes.css';
 import MeetingScheduler from './MeetingScheduler';
 import MeetingForm from './MeetingForm'; // Import the new form page
@@ -36,6 +38,7 @@ root.render(
             <ServiceStats />
             <BusinessTypes />
             <TestimonialCarousel />
+            <Applications />
             <AboutCeo />
             <MeetingScheduler />
           </>} />

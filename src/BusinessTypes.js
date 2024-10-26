@@ -1,5 +1,6 @@
 import React from 'react';
 import 'bootstrap/dist/css/bootstrap.min.css';
+import line from './images/line.svg';
 
 const BusinessTypes = () => {
   // Define inline styles
@@ -41,7 +42,7 @@ const BusinessTypes = () => {
     <div className="container mt-5" style={containerStyle}>
       <h1 style={{ textAlign: 'center', fontSize:'2.8rem' }}>Bring Innovation Together!</h1> {/* Center the H1 heading */}
       <img 
-        src="https://adya.ai/assets/FullHorizontalLine-9507ddc1.svg" 
+        src={line} 
         alt="Horizontal Line" 
         style={{ 
           display: 'block', 
@@ -105,7 +106,7 @@ const BusinessTypes = () => {
       </div>
       {/* Bottom SVG image */}
       <img 
-        src="https://adya.ai/assets/FullHorizontalLine-9507ddc1.svg" 
+        src={line} 
         alt="Horizontal Line" 
         style={{ 
           display: 'block', 
