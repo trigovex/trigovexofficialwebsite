@@ -1,87 +1,132 @@
 import React from 'react';
 import 'bootstrap/dist/css/bootstrap.min.css';
 import './Applications.css';
+import foodlogo from './images/foodlogo.png';
 
 function Applications() {
-  const cardData = [
+  const foodDeliveryData = [
     {
-      title: "Food Delivery",
+      title: "User Application",
       iconColor: "#31a76f",
-      image: "https://w7.pngwing.com/pngs/691/292/png-transparent-food-delivery-computer-icons-food-delivery-online-food-ordering-food-delivery-miscellaneous-angle-food-thumbnail.png"
+      image: foodlogo
     },
     {
-      title: "E-Commerce App",
+      title: "Restaurant Application",
       iconColor: "#31a76f",
-      image: "https://w7.pngwing.com/pngs/691/292/png-transparent-food-delivery-computer-icons-food-delivery-online-food-ordering-food-delivery-miscellaneous-angle-food-thumbnail.png"
+      image: foodlogo
     },
     {
-      title: "Logistics Application",
+      title: "Delivery Boy Application",
       iconColor: "#31a76f",
-      image: "https://w7.pngwing.com/pngs/691/292/png-transparent-food-delivery-computer-icons-food-delivery-online-food-ordering-food-delivery-miscellaneous-angle-food-thumbnail.png"
+      image: foodlogo
+    }
+  ];
+
+  const eCommerceData = [
+    {
+      title: "Buyer Application",
+      iconColor: "#31a76f",  // Match this color to food delivery
+      image: foodlogo
     },
     {
-      title: "Settlement App",
-      iconColor: "#31a76f",
-      image: "https://w7.pngwing.com/pngs/691/292/png-transparent-food-delivery-computer-icons-food-delivery-online-food-ordering-food-delivery-miscellaneous-angle-food-thumbnail.png"
+      title: "Seller Application",
+      iconColor: "#31a76f",  // Match this color to food delivery
+      image: foodlogo
     },
     {
-      title: "Custom Applications",
-      iconColor: "#31a76f",
-      image: "https://w7.pngwing.com/pngs/691/292/png-transparent-food-delivery-computer-icons-food-delivery-online-food-ordering-food-delivery-miscellaneous-angle-food-thumbnail.png"
+      title: "Logistics App",
+      iconColor: "#31a76f",  // Match this color to food delivery
+      image: foodlogo
     }
   ];
 
   return (
-    <div className="container-fluid my-5">
-    <h1 className="text-center mb-4" style={{ fontFamily: 'Poppins', fontWeight: '600',paddingBottom:'10px' }}>
-        TRIGOVEX's Applications
-      </h1> {/* Title */}
+    <div className="container my-5">
+      {/* Food Delivery Applications Section */}
       <div className="row justify-content-center">
-        {cardData.map((card, index) => (
-          <div key={index} className="col-md-4 col-lg-2 my-2 d-flex justify-content-center">
-            <div className="applications-card shadow border-0 text-center">
-              <div className="card-body d-flex flex-column align-items-center justify-content-center">
-                <div
-                  className="applications-icon-container mb-3"
-                  style={{
-                    border: `3px solid ${card.iconColor}`, // Using the new darker color
-                    color: card.iconColor
-                  }}
-                >
-                  <img src={card.image} alt={`${card.title} icon`} /> {/* Using different icons */}
+        <h1 className="text-center mb-4" style={{ fontFamily: 'Poppins', fontWeight: '600', paddingBottom: '10px' }}>
+          TRIGOVEX's Food Delivery Application
+        </h1>
+        {foodDeliveryData.map((card, index) => (
+          <React.Fragment key={index}>
+            <div className="col-md-3 col-lg-2 my-2 d-flex justify-content-center">
+              <div className="applications-card shadow border-0 text-center">
+                <div className="card-body d-flex flex-column align-items-center justify-content-center">
+                  <div
+                    className="applications-icon-container mb-3"
+                    style={{
+                      border: `3px solid ${card.iconColor}`,
+                      color: card.iconColor
+                    }}
+                  >
+                    <img src={card.image} alt={`${card.title} icon`} />
+                  </div>
+                  <h5 className="applications-card-title" style={{ color: card.iconColor }}>{card.title}</h5>
                 </div>
-                <h5 className="applications-card-title" style={{ color: card.iconColor }}>{card.title}</h5> {/* Using the new darker color */}
-                {/* <button className="btn btn-primary" style={{ backgroundColor: card.iconColor, borderColor: card.iconColor }}>
-                  Buy Now
-                </button> */}
               </div>
             </div>
-          </div>
+
+            {/* Add an image between the columns */}
+            {index < foodDeliveryData.length - 1 && (
+              <div className="col d-flex justify-content-center my-2 separator-container">
+                <img 
+                  src="https://adya.ai/assets/HorizontalVector-7512563c.svg" 
+                  alt="Horizontal Separator" 
+                  className="separator-image horizontal" 
+                  style={{ width: '100%', height: '100px', transform: 'scale(1)' }}
+                />
+                <img 
+                  src="https://adya.ai/assets/VerticalVector-9ed7d211.svg" 
+                  alt="Vertical Separator" 
+                  className="separator-image vertical" 
+                />
+              </div>
+            )}
+          </React.Fragment>
         ))}
       </div>
 
-      {/* Add margin-top class here */}
-      <div className="row justify-content-center mt-4">
-        {cardData.map((card, index) => (
-          <div key={index} className="col-md-4 col-lg-2 my-2 d-flex justify-content-center">
-            <div className="applications-card shadow border-0 text-center">
-              <div className="card-body d-flex flex-column align-items-center justify-content-center">
-                <div
-                  className="applications-icon-container mb-3"
-                  style={{
-                    border: `3px solid ${card.iconColor}`, // Using the new darker color
-                    color: card.iconColor
-                  }}
-                >
-                  <img src={card.image} alt={`${card.title} icon`} /> {/* Using different icons */}
+      {/* E-Commerce Applications Section */}
+      <div className="row justify-content-center" style={{ marginTop: '50px' }}>
+        <h1 className="text-center mb-4" style={{ fontFamily: 'Poppins', fontWeight: '600', paddingBottom: '10px' }}>
+          TRIGOVEX's E-Commerce Application
+        </h1>
+        {eCommerceData.map((card, index) => (
+          <React.Fragment key={index}>
+            <div className="col-md-3 col-lg-2 my-2 d-flex justify-content-center">
+              <div className="applications-card shadow border-0 text-center">
+                <div className="card-body d-flex flex-column align-items-center justify-content-center">
+                  <div
+                    className="applications-icon-container mb-3"
+                    style={{
+                      border: `3px solid ${card.iconColor}`,
+                      color: card.iconColor
+                    }}
+                  >
+                    <img src={card.image} alt={`${card.title} icon`} />
+                  </div>
+                  <h5 className="applications-card-title" style={{ color: card.iconColor }}>{card.title}</h5>
                 </div>
-                <h5 className="applications-card-title" style={{ color: card.iconColor }}>{card.title}</h5> {/* Using the new darker color */}
-                {/* <button className="btn btn-primary" style={{ backgroundColor: card.iconColor, borderColor: card.iconColor }}>
-                  Buy Now
-                </button> */}
               </div>
             </div>
-          </div>
+
+            {/* Add an image between the columns */}
+            {index < eCommerceData.length - 1 && (
+              <div className="col d-flex justify-content-center my-2 separator-container">
+                <img 
+                  src="https://adya.ai/assets/HorizontalVector-7512563c.svg" 
+                  alt="Horizontal Separator" 
+                  className="separator-image horizontal" 
+                  style={{ width: '100%', height: '100px', transform: 'scale(1)' }}
+                />
+                <img 
+                  src="https://adya.ai/assets/VerticalVector-9ed7d211.svg" 
+                  alt="Vertical Separator" 
+                  className="separator-image vertical" 
+                />
+              </div>
+            )}
+          </React.Fragment>
         ))}
       </div>
     </div>

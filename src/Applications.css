@@ -32,3 +32,22 @@
   font-weight: bold;
   margin-top: 10px;
 }
+.separator-image {
+  width: 100%; /* Ensure images take the full width of their column */
+  height: auto; /* Maintain aspect ratio */
+}
+
+/* Hide the vertical separator image by default */
+.vertical {
+  display: none; /* Hidden on larger screens */
+}
+@media (max-width: 767px) { /* Mobile breakpoint */
+  .horizontal {
+    display: none; /* Hide horizontal image on mobile */
+  }
+
+  .vertical {
+    display: block; /* Show vertical image on mobile */
+    height: 100px; /* Adjust height as needed */
+  }
+}
