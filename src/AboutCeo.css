@@ -1,90 +1,83 @@
-.ceo-title {
-    font-size: 3.2rem;
-    font-weight: 600;
-}
-
-.ceo-description {
-    font-size: 1.1rem;
-    margin-top: 20px;
-    color: black;
-}
-
-.contact-btn {
-    position: relative; /* Position relative for the inner span */
-    overflow: hidden; /* Hide overflowing elements */
+/* General Styling */
+.about-ceo {
+    font-family: 'Poppins', sans-serif;
+    color: #31a76f;
+  }
+  
+  /* CEO Info Box */
+  /* CEO Info Box */
+/* CEO Info Box */
+.ceo-info {
+    background-color: #f8f9fa;
+    border-left: 5px solid #31a76f;
+    box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.1);
+    min-height: 300px; /* Increase card height */
+    color: #000; /* Set font color to black */
+    padding: 20px;
+    
+    /* Centering the text */
+    display: flex;
+    flex-direction: column;
+    justify-content: center; /* Center-align the text */
+  }
+  
+  
+  
+  /* Heading Styles */
+  .heading-primary {
+    color: #41d79e;
+    font-size: 3rem; /* h1 size */
+  }
+  
+  .heading-secondary {
+    color: #41d79e;
+    font-size: 2.8rem; /* h2 size */
+  }
+  
+  /* Paragraph Text Styling (h4) */
+  .ceo-info p {
+    color: #41d79e;
+    font-size: 1.2rem; /* h4 size */
+  }
+  
+  /* Icon Section */
+  .icon-section .ceo-icon {
     background-color: #41d79e;
-    border: none;
-    padding: 10px 20px;
-    border-radius: 10px;
+    border-radius: 50%;
+    color: #fff;
+    padding: 10px;
+    font-size: 24px;
+  }
+  
+  /* Values Section */
+  .ceo-values .value {
+    color: #41d79e;
+    font-size: 16px;
+    text-align: center;
+  }
+  
+  .value-icon {
+    font-size: 28px;
+    color: #41d79e; /* Updated icon color */
+    padding-top: 20px;
+    margin-bottom: 10px;
+  }
+  
+  /* CEO Image Styling */
+  .ceo-image {
+    margin-top: 10px;
+    width: 70%; /* Maintain previous sizing */
+    max-width: 250px;
+    height: auto;
+    
+  }
+  
+  /* CEO Name Background */
+  .ceo-name {
+    background: linear-gradient(to right, #41d79e, #009e5f);
     font-size: 1.2rem;
-    color: white;
-    cursor: pointer;
-    transition: color 0.4s; /* Transition for text color */
-}
-
-.button-text {
-    position: relative; /* Position relative for the text */
-    z-index: 1; /* Ensure text is above the underline */
-}
-
-.button-underline {
-    content: '';
-    position: absolute;
-    bottom: 0;
-    left: 100%; /* Start off-screen to the right */
-    width: 100%;
-    height: 2px; /* Thickness of the underline */
-    background-color: white; /* Color of the underline */
-    transition: left 0.4s; /* Transition for moving left */
-}
-
-.contact-btn:hover .button-underline {
-    left: 0; /* Move the underline to the left */
-}
-
-.contact-btn:hover .button-text {
-    color: #fff; /* Optional: Change text color on hover */
-}
-
-/* Update image parameters */
-.ceo-image {
-    max-width: 100%;  /* Ensures the image is responsive */
-    height: auto;      /* Maintain aspect ratio */
-    min-height: 250px; /* Set a minimum height for the image */
-    margin: 20px 0;   /* Add top and bottom margins to the image */
-    border-radius: 20px; /* Add rounded corners for the image */
-    padding-left: 100px;
-    padding-right: 100px;
-}
-
-/* Media Queries for Responsiveness */
-@media (max-width: 768px) {
-    .ceo-banner {
-        padding: 20px; /* Add some padding for smaller screens */
-        border-radius: 20px; /* Reduce border radius on smaller screens */
-    }
-
-    .ceo-title {
-        font-size: 2.5rem; /* Smaller title font for mobile */
-    }
-
-    .ceo-description {
-        font-size: 1rem; /* Smaller description font for mobile */
-    }
-
-    .contact-btn {
-        font-size: 1rem; /* Smaller button font for mobile */
-        padding: 8px 16px; /* Smaller padding */
-    }
-
-    .ceo-image {
-        min-height: 150px; /* Reduce minimum height on mobile */
-        margin: 10px 0;    /* Less margin on mobile */
-    }
-}
-
-@media (min-width: 768px) {
-    .text-section {
-        padding-left: 120px; /* Set left padding for desktop view */
-    }
-}
+    width: auto;
+    padding: 5px 10px;
+    color: #fff; /* Ensure text is visible over gradient */
+  }
+  

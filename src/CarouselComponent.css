@@ -1,0 +1,13 @@
+.carousel-item-content {
+    display: flex; /* Use flexbox for centering */
+    justify-content: center; /* Center items horizontally */
+    align-items: center; /* Center items vertically */
+    height: 850px; /* Set a fixed height for the banners */
+    overflow: hidden; /* Prevent overflow of content */
+  }
+  
+  .carousel-item-content > div {
+    max-width: 100%; /* Ensure content does not exceed container width */
+    height: auto; /* Maintain aspect ratio */
+  }
+  

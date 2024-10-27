@@ -17,6 +17,8 @@ import BusinessTypes from './BusinessTypes';
 import Applications from './Applications';
 import './Applications.css';
 import './BusinessTypes.css';
+import Solutions from './Solutions';
+import './Solutions.css';
 import MeetingScheduler from './MeetingScheduler';
 import MeetingForm from './MeetingForm'; // Import the new form page
 import { BrowserRouter as Router, Route, Routes } from 'react-router-dom';
@@ -35,10 +37,11 @@ root.render(
             <Timeline />
             <Services />
             <CarouselComponent />
+            <Solutions />
             <ServiceStats />
-            <BusinessTypes />
             <TestimonialCarousel />
             <Applications />
+            <BusinessTypes />
             <AboutCeo />
             <MeetingScheduler />
           </>} />
