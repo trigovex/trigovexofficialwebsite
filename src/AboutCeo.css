@@ -21,7 +21,20 @@
     justify-content: center; /* Center-align the text */
   }
   
+  .contact-button {
+    background-color: #31a76f;
+    color: white;
+    border: none;
+    padding: 6px 12px;
+    font-size: 14px;
+    cursor: pointer;
+    border-radius: 4px;
+    width:max-content;
+  }
   
+  .contact-button:hover {
+    background-color: #218838;
+  }
   
   /* Heading Styles */
   .heading-primary {
