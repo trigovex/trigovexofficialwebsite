@@ -1,96 +1,126 @@
 /* General Styling */
 .about-ceo {
-    font-family: 'Poppins', sans-serif;
-    color: #31a76f;
-  }
-  
-  /* CEO Info Box */
-  /* CEO Info Box */
+  font-family: 'Poppins', sans-serif;
+  color: #31a76f;
+}
+
 /* CEO Info Box */
 .ceo-info {
-    background-color: #f8f9fa;
-    border-left: 5px solid #31a76f;
-    box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.1);
-    min-height: 300px; /* Increase card height */
-    color: #000; /* Set font color to black */
-    padding: 20px;
-    
-    /* Centering the text */
-    display: flex;
-    flex-direction: column;
-    justify-content: center; /* Center-align the text */
-  }
-  
-  .contact-button {
-    background-color: #31a76f;
-    color: white;
-    border: none;
-    padding: 6px 12px;
-    font-size: 14px;
-    cursor: pointer;
-    border-radius: 4px;
-    width:max-content;
-  }
-  
-  .contact-button:hover {
-    background-color: #218838;
-  }
-  
-  /* Heading Styles */
+  background-color: #f8f9fa;
+  border-left: 5px solid #31a76f;
+  box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.1);
+  min-height: 300px;
+  color: #000;
+  padding: 20px;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+}
+
+.contact-button {
+  background-color: #31a76f;
+  color: white;
+  border: none;
+  padding: 6px 12px;
+  font-size: 14px;
+  cursor: pointer;
+  border-radius: 4px;
+  width: max-content;
+}
+
+.contact-button:hover {
+  background-color: #218838;
+}
+
+/* Heading Styles */
+.heading-primary {
+  color: darkorange;
+  font-size: 3rem;
+}
+
+.heading-secondary {
+  color: #41d79e;
+  font-size: 2.8rem;
+}
+
+/* Paragraph Text Styling */
+.ceo-info p {
+  color: #41d79e;
+  font-size: 1.2rem;
+}
+
+/* Icon Section */
+.icon-section .ceo-icon {
+  background-color: #41d79e;
+  border-radius: 50%;
+  color: #fff;
+  padding: 10px;
+  font-size: 24px;
+}
+
+/* Values Section */
+.ceo-values .value {
+  color: #41d79e;
+  font-size: 16px;
+  text-align: center;
+}
+
+.value-icon {
+  font-size: 28px;
+  color: #41d79e;
+  padding-top: 20px;
+  margin-bottom: 10px;
+}
+
+/* CEO Image Styling */
+.ceo-image {
+  margin-top: 10px;
+  width: 70%;
+  max-width: 250px;
+  height: auto;
+}
+
+/* CEO Name Background */
+.ceo-name {
+  background: linear-gradient(to right, #41d79e, #009e5f);
+  font-size: 1.2rem;
+  width: auto;
+  padding: 5px 10px;
+  color: #fff;
+}
+
+/* Responsive Styling */
+@media (max-width: 768px) {
   .heading-primary {
-    color: #41d79e;
-    font-size: 3rem; /* h1 size */
+      font-size: 2.2rem; /* Smaller font for h1 on mobile */
   }
   
   .heading-secondary {
-    color: #41d79e;
-    font-size: 2.8rem; /* h2 size */
+      font-size: 2rem; /* Smaller font for h2 on mobile */
   }
   
-  /* Paragraph Text Styling (h4) */
   .ceo-info p {
-    color: #41d79e;
-    font-size: 1.2rem; /* h4 size */
+      font-size: 1rem; /* Adjust paragraph font size */
   }
   
-  /* Icon Section */
-  .icon-section .ceo-icon {
-    background-color: #41d79e;
-    border-radius: 50%;
-    color: #fff;
-    padding: 10px;
-    font-size: 24px;
+  /* Stack image and content vertically on mobile */
+  .about-ceo .row.align-items-center {
+      flex-direction: column;
   }
   
-  /* Values Section */
-  .ceo-values .value {
-    color: #41d79e;
-    font-size: 16px;
-    text-align: center;
-  }
-  
-  .value-icon {
-    font-size: 28px;
-    color: #41d79e; /* Updated icon color */
-    padding-top: 20px;
-    margin-bottom: 10px;
-  }
-  
-  /* CEO Image Styling */
   .ceo-image {
-    margin-top: 10px;
-    width: 70%; /* Maintain previous sizing */
-    max-width: 250px;
-    height: auto;
-    
+      width: 50%; /* Smaller image size on mobile */
+      max-width: 150px;
+      margin: auto; /* Center the image */
   }
   
-  /* CEO Name Background */
-  .ceo-name {
-    background: linear-gradient(to right, #41d79e, #009e5f);
-    font-size: 1.2rem;
-    width: auto;
-    padding: 5px 10px;
-    color: #fff; /* Ensure text is visible over gradient */
+  .contact-button {
+      font-size: 12px;
+      padding: 4px 8px; /* Smaller padding for mobile */
   }
   
+  .ceo-info {
+      min-height: auto;
+      padding: 15px;
+  }
+}
