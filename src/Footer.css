@@ -1,6 +1,6 @@
 /* General footer styles */
 .footer {
-    background-color: #41d79e;
+    background-color: #393a3b;
     color: white;
     margin-top: 50px; /* Initial space to separate from top */
     padding: 20px 0; /* Default padding */
@@ -9,11 +9,12 @@
 
 .footer h5 {
     font-weight: 600; /* Stronger font weight for headings */
+    color: white;
 }
 
 .footer p, .footer ul {
     font-weight: 300;
-    color: black;
+    color: white;
 }
 
 .footer ul li {
