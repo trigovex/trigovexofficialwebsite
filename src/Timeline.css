@@ -1,5 +1,4 @@
 /* Timeline.css */
-/* Timeline.css */
 @media (max-width: 768px) {
     .text-center img {
         max-width: 100%;
@@ -22,22 +21,21 @@ body {
     position: relative;
     margin-bottom: 40px;
 }
-/* Timeline.css */
-.text-center img {
-    max-width: 100%; /* Makes sure the image does not exceed the container's width */
-    height: auto;    /* Maintains the aspect ratio */
-}
 
+.text-center img {
+    max-width: 100%;
+    height: auto;
+}
 
 .timeline .event .circle {
     position: absolute;
-    left: -51px; /* Adjusted to ensure the line goes through the center */
+    left: -51px;
     top: 0;
     background-color: #09b875;
     border-radius: 50%;
     width: 20px;
     height: 20px;
-    z-index: 1; /* Ensures the dot is on top of the line */
+    z-index: 1;
 }
 
 .timeline .event .title {
@@ -51,8 +49,37 @@ body {
     margin-right: 5px;
 }
 
+/* Slide-in animation for p tag */
+@keyframes slideInLeft {
+    from {
+        transform: translateX(-100%);
+        opacity: 0;
+    }
+    to {
+        transform: translateX(0);
+        opacity: 1;
+    }
+}
+
 .timeline .event p {
-    margin: 0;
     color: black;
     font-size: 1.1rem;
+    margin: 1;
+    opacity: 0;
+    animation: slideInLeft 0.6s ease-out forwards;
 }
+
+/* Add delay for one-by-one effect */
+.timeline .event:nth-child(1) p {
+    animation-delay: 0.2s;
+}
+.timeline .event:nth-child(2) p {
+    animation-delay: 0.4s;
+}
+.timeline .event:nth-child(3) p {
+    animation-delay: 0.6s;
+}
+.timeline .event:nth-child(4) p {
+    animation-delay: 0.8s;
+}
+/* Continue adding more for additional events */

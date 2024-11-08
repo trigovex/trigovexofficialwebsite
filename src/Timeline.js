@@ -1,7 +1,7 @@
 import React from 'react';
 import 'bootstrap/dist/css/bootstrap.min.css';
 import './Timeline.css'; // Assuming you create a separate CSS file for styling
-import Image from './images/s1.png';
+import Image from './images/sdlc2.png';
 import tick from './images/tickmark.svg';
 
 const Timeline = () => {
@@ -19,23 +19,23 @@ const Timeline = () => {
                         {/* Breaking Barriers Section */}
                         <div className="event">
                             <div className="circle"></div>
-                            <h5 className="title">Breaking Barriers</h5>
-                            <p><img src={tick} alt="Check" /> Let's tear down those entry barriers, leveling the playing field for sellers.</p>
-                            <p><img src={tick} alt="Check" /> Say goodbye to corporate monopolies, ONDC is all about fair play.</p>
+                            <h5 className="title">Requirements Analysis</h5>
+                            <p><img src={tick} alt="Check" /> We conduct a thorough gathering and analysis of client requirements to ensure project clarity.</p>
+                            <p><img src={tick} alt="Check" /> Detailed documentation and project scope definition keep all parties aligned.</p>
                         </div>
                         {/* Nurturing Fair Commerce Section */}
                         <div className="event">
                             <div className="circle"></div>
-                            <h5 className="title">Nurturing Fair Commerce</h5>
-                            <p><img src={tick} alt="Check" /> Picture a world where commerce is equitable, where every business, big or small, has a chance.</p>
-                            <p><img src={tick} alt="Check" /> ONDC is here to foster fairness in digital markets.</p>
+                            <h5 className="title">Design & Development</h5>
+                            <p><img src={tick} alt="Check" /> Our team creates a robust architecture and system design that prioritizes scalability.</p>
+                            <p><img src={tick} alt="Check" /> Agile development with regular client feedback refines the solution along the way.</p>
                         </div>
                         {/* Choice and Inclusivity Section */}
                         <div className="event">
                             <div className="circle"></div>
-                            <h5 className="title">Choice and Inclusivity</h5>
-                            <p><img src={tick} alt="Check" /> Embrace a world where shoppers revel in a wealth of choice.</p>
-                            <p><img src={tick} alt="Check" /> ONDC's inclusive approach brings new domains and industries into the digital commerce fold.</p>
+                            <h5 className="title">Testing & Deployment</h5>
+                            <p><img src={tick} alt="Check" /> Comprehensive testing and quality assurance guarantee reliability and performance.</p>
+                            <p><img src={tick} alt="Check" /> Smooth deployment and attentive post-launch support ensure continued success.</p>
                         </div>
                     </div>
                 </div>
