@@ -1,7 +1,7 @@
 import React from 'react';
 import 'bootstrap/dist/css/bootstrap.min.css'; // Bootstrap for layout
 import './Banner2.css'; // Import the separate CSS for Banner1
-import S1 from './images/s1.png';
+import S1 from '../../images/s1.png';
 
 const Banner2 = () => {
   return (

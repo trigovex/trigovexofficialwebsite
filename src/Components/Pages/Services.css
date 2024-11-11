@@ -88,3 +88,12 @@
     color: white;
   }
   
+  .services-page-wrapper {
+    padding-top: 20px; /* Adjust this value based on your navbar height */
+  }
+  
+  /* If you want to use margin instead of padding */
+  /* .services-page-wrapper {
+    margin-top: 100px;
+  } */
+  

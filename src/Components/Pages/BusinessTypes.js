@@ -1,6 +1,8 @@
 import React from 'react';
 import 'bootstrap/dist/css/bootstrap.min.css';
-import line from './images/line.svg';
+import line from '../../images/line.svg';
+import { motion } from 'framer-motion';
+import { pageTransitions } from '../common/transitions';
 
 const BusinessTypes = () => {
   // Define inline styles
@@ -39,7 +41,16 @@ const BusinessTypes = () => {
   };
 
   return (
-    <div className="container mt-5" style={containerStyle}>
+
+    <motion.div
+    className="page-container"
+    variants={pageTransitions}
+    initial="initial"
+    animate="animate"
+    exit="exit"
+    transition={{ duration: 0.3 }}
+  >
+    <div className="container mt-3" style={containerStyle}>
       <h1 style={{ textAlign: 'center', fontSize:'2.8rem' }}>Bring Innovation Together!</h1> {/* Center the H1 heading */}
       <img 
         src={line} 
@@ -117,6 +128,7 @@ const BusinessTypes = () => {
         }} 
       />
     </div>
+    </motion.div>
   );
 };
 

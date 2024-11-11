@@ -1,7 +1,7 @@
 import React from 'react';
 import Carousel from 'react-bootstrap/Carousel';
-import Banner2 from './Banner2';  // Import Banner2 component
-import Banner3 from './Banner3';  // Import Banner3 component
+import Banner2 from '../Banners/Banner2';  // Import Banner2 component
+import Banner3 from '../Banners/Banner3';  // Import Banner3 component
 import './CarouselComponent.css';
 const CarouselComponent = () => {
   return (

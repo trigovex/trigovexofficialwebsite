@@ -1,6 +1,6 @@
 /* Banner1 Component Specific Styles */
-.app-banner2 {
-    background-image: url('./images/NewGradient.png');
+.app-banner3 {
+    background-image: url('../../images/NewGradient.png');
     background-size: cover;
     background-position: center;
     height: 100vh;
@@ -22,7 +22,7 @@
     font-weight: 600;
   }
   
-  .highlighted1-text {
+  .highlighted2-text {
     color: #41d79e; /* Green */
   }
   

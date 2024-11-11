@@ -41,3 +41,56 @@ code {
 
   /* You can add more styles to adjust layouts, buttons, etc. */
 }
+
+.main-content {
+  position: relative;
+  min-height: 100vh;
+}
+
+.page-transition-enter {
+  opacity: 0;
+  transform: translateY(20px);
+}
+
+.page-transition-enter-active {
+  opacity: 1;
+  transform: translateY(0);
+  transition: opacity 300ms, transform 300ms;
+}
+
+.page-transition-exit {
+  opacity: 1;
+  transform: translateY(0);
+}
+
+.page-transition-exit-active {
+  opacity: 0;
+  transform: translateY(-20px);
+  transition: opacity 300ms, transform 300ms;
+}
+
+.page-container {
+  padding-top: 80px; /* Adjust this value based on your navbar height */
+  min-height: 100vh;
+  width: 100%;
+}
+
+/* Additional specific page styles */
+.meeting-form-container {
+  max-width: 800px;
+  margin: 0 auto;
+  padding: 20px;
+}
+
+.calender-container {
+  max-width: 1200px;
+  margin: 0 auto;
+  padding: 20px;
+}
+
+/* Responsive adjustments */
+@media (max-width: 768px) {
+  .page-container {
+    padding-top: 60px; /* Smaller padding for mobile */
+  }
+}

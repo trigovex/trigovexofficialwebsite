@@ -1,5 +1,7 @@
 import React from 'react';
 import './Services.css';
+import { motion } from 'framer-motion';
+import { pageTransitions } from '../common/transitions';
 
 const Services = ({ image, title, description }) => {
   return (
@@ -31,19 +33,31 @@ const ServicesList = () => {
   ];
 
   return (
-    <div className="container"> {/* Bootstrap container */}
-      <h1 className="text-center my-4" style={{ fontFamily: 'Poppins', fontWeight: '600', paddingBottom: '20px' }}>Our Services</h1> {/* Title */}
-      <div className="row"> {/* Bootstrap row */}
-        {servicesData.map((item, index) => (
-          <Services
-            key={index}
-            image={item.image}
-            title={item.title}
-            description={item.description}
-          />
-        ))}
+
+    <motion.div
+    className="page-container"
+    variants={pageTransitions}
+    initial="initial"
+    animate="animate"
+    exit="exit"
+    transition={{ duration: 0.3 }}
+  >
+    <div className="services-page-wrapper" style={{ paddingTop: '50px' }}>
+      <div className="container">
+        <h1 className="text-center my-4" style={{ fontFamily: 'Poppins', fontWeight: '600', paddingBottom: '20px' }}>Our Services</h1>
+        <div className="row">
+          {servicesData.map((item, index) => (
+            <Services
+              key={index}
+              image={item.image}
+              title={item.title}
+              description={item.description}
+            />
+          ))}
+        </div>
       </div>
     </div>
+        </motion.div>
   );
 };
 

@@ -1,7 +1,7 @@
 import React, { useEffect, useState } from 'react';
 import 'bootstrap/dist/css/bootstrap.min.css';
 import './Banner1.css';
-import S1 from './images/s1.png';
+import S1 from '../../images/s1.png';
 
 const Banner1 = () => {
   const words = ['Web Development', 'App Development', 'E-Commerce'];

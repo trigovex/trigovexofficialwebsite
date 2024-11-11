@@ -1,13 +1,15 @@
 // ServiceStats.js
 import React from 'react';
 import './ServiceStats.css';
-import appsImage from './images/apps.png';
-import webImage from './images/web.png';
-import gameImage from './images/game.png';
-import iotImage from './images/iot.jpg';
-import reviewImage from './images/review.jpg';
-import awardsImage from './images/awards.jpg';
-import employeesImage from './images/employees.jpg';
+import appsImage from '../../images/apps.png';
+import webImage from '../../images/web.png';
+import gameImage from '../../images/game.png';
+import iotImage from '../../images/iot.jpg';
+import reviewImage from '../../images/review.jpg';
+import awardsImage from '../../images/awards.jpg';
+import employeesImage from '../../images/employees.jpg';
+import { motion } from 'framer-motion';
+import { pageTransitions } from '../common/transitions';
 
 const statsData = [
     { img: appsImage, value: '20+', label: 'Apps Developed' },
@@ -22,6 +24,14 @@ const statsData = [
 
 const ServiceStats = () => {
     return (
+        <motion.div
+        className="page-container"
+        variants={pageTransitions}
+        initial="initial"
+        animate="animate"
+        exit="exit"
+        transition={{ duration: 0.3 }}
+      >
         <div className="container">
             <h1 className="text-center my-4" style={{ fontFamily: 'Poppins', fontWeight: '600',paddingBottom: '30PX' }}>
                 TRIGOVEX's JOURNEY
@@ -47,6 +57,8 @@ const ServiceStats = () => {
                 ))}
             </div>
         </div>
+
+        </motion.div>
     );
 };
 

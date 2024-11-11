@@ -1,7 +1,9 @@
 import React from 'react';
 import 'bootstrap/dist/css/bootstrap.min.css';
 import './Applications.css';
-import foodlogo from './images/foodlogo.png';
+import foodlogo from '../../images/foodlogo.png';
+import { motion } from 'framer-motion';
+import { pageTransitions } from '../common/transitions';
 
 function Applications() {
   const foodDeliveryData = [
@@ -41,6 +43,15 @@ function Applications() {
   ];
 
   return (
+
+    <motion.div
+    className="page-container"
+    variants={pageTransitions}
+    initial="initial"
+    animate="animate"
+    exit="exit"
+    transition={{ duration: 0.3 }}
+  >
     <div className="container my-5">
       {/* Food Delivery Applications Section */}
       <div className="row justify-content-center">
@@ -130,6 +141,7 @@ function Applications() {
         ))}
       </div>
     </div>
+    </motion.div>
   );
 }
 

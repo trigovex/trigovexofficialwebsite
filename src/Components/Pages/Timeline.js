@@ -1,8 +1,8 @@
 import React from 'react';
 import 'bootstrap/dist/css/bootstrap.min.css';
 import './Timeline.css'; // Assuming you create a separate CSS file for styling
-import Image from './images/sdlc2.png';
-import tick from './images/tickmark.svg';
+import Image from '../../images/sdlc2.png';
+import tick from '../../images/tickmark.svg';
 
 const Timeline = () => {
     return (
