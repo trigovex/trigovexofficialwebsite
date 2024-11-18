@@ -4,7 +4,6 @@
     background-size: cover;
     background-position: center;
     height: 100vh;
-    border-radius: 60px;
   }
 
   
@@ -83,10 +82,10 @@
   }
   /* Media Queries for Responsiveness */
   @media (max-width: 768px) {
-    .app-banner {
+    .app-banner3 {
       height: auto; /* Allow height to adjust */
       padding: 20px; /* Add some padding for smaller screens */
-      border-radius: 20px; /* Reduce border radius on smaller screens */
+      border-radius: 60px; /* Changed to 60px border radius for mobile screens */
     }
   
     .banner-title {

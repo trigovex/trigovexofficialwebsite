@@ -4,7 +4,7 @@ import './Banner1.css';
 import S1 from './images/s1.png';
 
 const Banner1 = () => {
-  const words = ['Web Development', 'App Development', 'E-Commerce'];
+  const words = ['Web Development', 'App Development', 'E-Commerce', 'Enterprise Solutions'];
   const [index, setIndex] = useState(0); // Index of the current word
   const [subIndex, setSubIndex] = useState(0); // Index for typing effect
   const [reverse, setReverse] = useState(false); // For erasing the text
@@ -49,7 +49,7 @@ const Banner1 = () => {
             We create experiences that transform brands, grow businesses, and make people's lives better. Let's create something special together.
           </p>
           <button className="btn btn-success download-btn">
-            <i className="fab fa-apple"></i> Get Started Now
+            Get Started Now
           </button>
         </div>
 

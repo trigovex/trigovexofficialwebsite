@@ -1,8 +1,9 @@
 .navbar {
+  background: black;
     padding: 0.7rem;
     padding-left: 120px;
     padding-right: 120px;
-    background: rgba(255, 255, 255, 0.2); /* Semi-transparent background */
+    background-image: url('./images/NewGradient1.png'); /* Semi-transparent background */
     backdrop-filter: blur(10px); /* Blur effect for glassmorphism */
     -webkit-backdrop-filter: blur(10px); /* For Safari support */
     border-radius: 10px; /* Rounded corners */
@@ -21,27 +22,41 @@
   .nav-link {
     color: black !important;
     padding: 0.5rem 1rem;
+    font-size: 1.2rem;
+    font-weight: 350;
+    transition: color 0.3s ease;
+  }
+  
+  .nav-link:hover {
+    color: #41d79e !important;
   }
   
   .btn-danger {
-    background-color: #41d79e;
+    background-color: white;
     border: none;
-    padding: 0.3rem 0.7rem;
-    backdrop-filter: blur(10px); 
+    padding: 0.5rem 1rem;
+    backdrop-filter: blur(10px);
     -webkit-backdrop-filter: blur(10px);
-    border-radius: 8px;
+    border-radius: 10px;
     box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
-    transition: background-color 0.3s ease;
+    transition: all 0.3s ease;
+    color: black;
   }
   
   .btn-danger:hover {
-    background-color: #38c08b;
+    background-color: #41d79e;
+    color: black;
   }
   
   @media (max-width: 768px) {
     .navbar {
-      padding: 0.25rem;
-      border-radius: 0; /* Remove rounded corners on mobile */
+      padding: 1rem;
+      border-radius: 0;
+      min-height: 80px;
+    }
+  
+    .navbar-logo {
+      height: 60px;
     }
   
     .navbar-brand {

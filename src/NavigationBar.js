@@ -6,8 +6,15 @@ import logo from './images/trigovexnew2.jpg'; // Adjust the path to your logo im
 
 const NavigationBar = () => {
   return (
-    <nav className="navbar navbar-expand-lg navbar-light bg-light fixed-top">
-      <div className="container">
+    <nav className="navbar navbar-expand-lg navbar-light fixed-top">
+      <div className="container" style={{
+        backgroundColor: 'rgba(255, 255, 255, 0.7)',
+        backdropFilter: 'blur(1px)',
+        WebkitBackdropFilter: 'blur(10px)', // For Safari support
+        borderRadius: '10px',
+        border: '1px solid rgba(255, 255, 255, 0.18)',
+        boxShadow: '0 8px 32px 0 rgba(31, 38, 135, 0.37)'
+      }}>
         <Link className="navbar-brand" to="/">
           <img src={logo} alt="TRIGOVEX Logo" className="navbar-logo" />
         </Link>
@@ -43,7 +50,7 @@ const NavigationBar = () => {
               <Link className="nav-link" to="/careers">Careers</Link>
             </li>
           </ul>
-          <button className="btn btn-danger">Schedule Meet</button>
+          <button className="btn btn-danger">Contact Us</button>
         </div>
       </div>
     </nav>

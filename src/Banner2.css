@@ -1,10 +1,9 @@
 /* Banner1 Component Specific Styles */
 .app-banner2 {
-    background-image: url('./images/NewGradient.png');
+    background-image: url('./images/NewGradient1.png');
     background-size: cover;
     background-position: center;
     height: 100vh;
-    border-radius: 60px;
   }
 
   
@@ -86,7 +85,7 @@
     .app-banner {
       height: auto; /* Allow height to adjust */
       padding: 20px; /* Add some padding for smaller screens */
-      border-radius: 20px; /* Reduce border radius on smaller screens */
+      border-radius: 60px; /* Border radius only for mobile screens */
     }
   
     .banner-title {
