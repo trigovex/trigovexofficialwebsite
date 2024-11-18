@@ -110,7 +110,7 @@ body, html {
   .app-banner {
     height: auto; /* Allow height to adjust */
     padding: 20px; /* Add some padding for smaller screens */
-    margin-top: 30px; /* Adjusted padding-top for mobile view */
+    margin-top: 15px; /* Adjusted padding-top for mobile view */
   }
 
   .banner-title {
