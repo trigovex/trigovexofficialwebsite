@@ -1,6 +1,6 @@
 /* Banner1 Component Specific Styles */
-.app-banner3 {
-    background-image: url('./images/NewGradient.png');
+.app-banner2 {
+    background-image: url('../../images/NewGradient1.png');
     background-size: cover;
     background-position: center;
     height: 100vh;
@@ -21,8 +21,8 @@
     font-weight: 600;
   }
   
-  .highlighted2-text {
-    color: #41d79e; /* Green */
+  .highlighted1-text {
+    color: #41d79e; /* Red*/
   }
   
   .banner-description {
@@ -33,29 +33,12 @@
   
   .download-btn {
     margin-top: 20px;
-    background: rgba(255, 255, 255, 0.2); /* Semi-transparent white background */
-    backdrop-filter: blur(10px); /* Blur effect */
-    -webkit-backdrop-filter: blur(10px); /* For Safari support */
-    border: 1px solid rgba(255, 255, 255, 0.3); /* Subtle border */
-    box-shadow: 0 8px 32px 0 rgba(31, 38, 135, 0.37); /* Soft shadow */
+    background-color: #41d79e;
+    border: none;
     padding: 10px 20px;
     border-radius: 10px;
-    color: black;
     font-size: 1.2rem;
-    transition: all 0.3s ease;
-  }
-  
-  .download-btn:hover {
-    background: rgba(255, 255, 255, 0.25); /* Slightly more opaque on hover */
-    box-shadow: 0 8px 32px 0 rgba(31, 38, 135, 0.45); /* Enhanced shadow on hover */
-    transform: translateY(-2px); /* Slight lift effect */
-  }
-  
-  /* Ensure compatibility for different browsers */
-  @supports not (backdrop-filter: blur(10px)) {
-    .download-btn {
-        background: rgba(255, 255, 255, 0.7); /* Fallback for browsers that don't support backdrop-filter */
-    }
+    color: white;
   }
   
   
@@ -99,10 +82,10 @@
   }
   /* Media Queries for Responsiveness */
   @media (max-width: 768px) {
-    .app-banner3 {
+    .app-banner {
       height: auto; /* Allow height to adjust */
       padding: 20px; /* Add some padding for smaller screens */
-      border-radius: 60px; /* Changed to 60px border radius for mobile screens */
+      border-radius: 60px; /* Border radius only for mobile screens */
     }
   
     .banner-title {
@@ -117,33 +100,5 @@
       font-size: 1rem; /* Smaller button font for mobile */
       padding: 8px 16px; /* Smaller padding */
     }
-  }
-  
-  /* Slide-in animation keyframes */
-  @keyframes slideInFromLeft {
-      0% {
-          transform: translateX(-100%);
-          opacity: 0;
-      }
-      100% {
-          transform: translateX(0);
-          opacity: 1;
-      }
-  }
-
-  .app-banner3 p {
-      opacity: 1; /* Reset opacity */
-  }
-
-  /* Optional: You can keep your custom animation if you prefer it over AOS animations */
-  @keyframes slideInFromLeft {
-      0% {
-          transform: translateX(-100%);
-          opacity: 0;
-      }
-      100% {
-          transform: translateX(0);
-          opacity: 1;
-      }
   }
   

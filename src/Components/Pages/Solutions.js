@@ -1,6 +1,6 @@
 import React from 'react';
 import Lottie from 'lottie-react'; // Import Lottie
-import animationData from './images/animation1.json'; // Adjust the path to your JSON file44
+import animationData from '../../images/animation1.json'; // Adjust the path to your JSON file44
 import './Solutions.css';
 
 const Solutions = () => {

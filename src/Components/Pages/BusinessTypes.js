@@ -1,11 +1,12 @@
 import React from 'react';
 import 'bootstrap/dist/css/bootstrap.min.css';
-import line from './images/line.svg';
+import line from '../../images/line.svg';
 
 const BusinessTypes = () => {
   // Define inline styles
   const containerStyle = {
-    padding: '30px',
+    padding: '50px',
+    marginTop: '80px',
   };
 
   const itemStyle = {
@@ -39,8 +40,8 @@ const BusinessTypes = () => {
   };
 
   return (
-    <div className="container mt-5" style={containerStyle}>
-      <h1 style={{ textAlign: 'center', fontSize:'2.8rem' }}>Bring Innovation Together!</h1> {/* Center the H1 heading */}
+    <div className="container" style={containerStyle}>
+      <h1 style={{ textAlign: 'center', fontSize: '2.8rem' }}>Bring Innovation Together!</h1> {/* Center the H1 heading */}
       <img 
         src={line} 
         alt="Horizontal Line" 

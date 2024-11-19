@@ -1,7 +1,7 @@
 import React from 'react';
 import 'bootstrap/dist/css/bootstrap.min.css';
 import './Applications.css';
-import foodlogo from './images/foodlogo.png';
+import foodlogo from '../../images/foodlogo.png';
 
 function Applications() {
   const foodDeliveryData = [

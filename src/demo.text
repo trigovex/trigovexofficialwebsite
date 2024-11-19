@@ -1,0 +1,60 @@
+import React from 'react';
+import ReactDOM from 'react-dom/client';
+import './index.css';
+import reportWebVitals from './reportWebVitals';
+import Timeline from '../src/Components/Pages/Timeline';
+import '../src/Components/Pages/Timeline.css';
+import ServiceStats from './Components/Pages/ServiceStats';
+import '../src/Components/Pages/ServiceStats.css';
+import TestimonialCarousel from '../src/Components/Carsousel/TestimonialCarousel';
+import Services from './Components/Pages/Services';
+import Banner1 from '../src/Components/Banners/Banner1';
+import AboutCeo from './Components/Pages/AboutCeo';
+import CarouselComponent from '../src/Components/Carsousel/CarouselComponent';
+import NavigationBar from '../src/Components/Layout/NavigationBar';
+import Footer from '../src/Components/Layout/Footer';
+import BusinessTypes from '../src/Components/Pages/BusinessTypes';
+import Applications from '../src/Components/Pages/Applications';
+import '../src/Components/Pages/Applications.css';
+import '../src/Components/Pages/BusinessTypes.css';
+import Solutions from '../src/Components/Pages/Solutions';
+import '../src/Components/Pages/Solutions.css';
+import MeetingScheduler from '../src/Components/Meeting/MeetingScheduler';
+import MeetingForm from '../src/Components/Meeting/MeetingForm'; // Import the new form page
+import { BrowserRouter as Router, Route, Routes } from 'react-router-dom';
+
+const root = ReactDOM.createRoot(document.getElementById('root'));
+
+root.render(
+  <React.StrictMode>
+    <Router>
+      <NavigationBar />
+      <div className="content">
+        <Routes>
+          {/* Define routes for different components/pages */}
+          <Route path="/" element={<>
+            <Banner1 />
+            <Timeline />
+            <Services />
+            <CarouselComponent />
+            <Solutions />
+            <ServiceStats />
+            <TestimonialCarousel />
+            <Applications />
+            <BusinessTypes />
+            <AboutCeo />
+            <MeetingScheduler />
+          </>} />
+          {/* Separate route for MeetingForm */}
+          <Route path="/meeting-form" element={<MeetingForm />} />
+        </Routes>
+      </div>
+      <Footer />
+    </Router>
+  </React.StrictMode>
+);
+
+// If you want to start measuring performance in your app, pass a function
+// to log results (for example: reportWebVitals(console.log))
+// or send to an analytics endpoint. Learn more: https://bit.ly/CRA-vitals
+reportWebVitals();

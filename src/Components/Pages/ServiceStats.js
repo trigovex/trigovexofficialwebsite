@@ -1,13 +1,13 @@
 // ServiceStats.js
 import React from 'react';
 import './ServiceStats.css';
-import appsImage from './images/apps.png';
-import webImage from './images/web.png';
-import gameImage from './images/game.png';
-import iotImage from './images/iot.jpg';
-import reviewImage from './images/review.jpg';
-import awardsImage from './images/awards.jpg';
-import employeesImage from './images/employees.jpg';
+import appsImage from '../../images/apps.png';
+import webImage from '../../images/web.png';
+import gameImage from '../../images/game.png';
+import iotImage from '../../images/iot.jpg';
+import reviewImage from '../../images/review.jpg';
+import awardsImage from '../../images/awards.jpg';
+import employeesImage from '../../images/employees.jpg';
 
 const statsData = [
     { img: appsImage, value: '20+', label: 'Apps Developed' },
