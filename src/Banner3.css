@@ -119,31 +119,3 @@
     }
   }
   
-  /* Slide-in animation keyframes */
-  @keyframes slideInFromLeft {
-      0% {
-          transform: translateX(-100%);
-          opacity: 0;
-      }
-      100% {
-          transform: translateX(0);
-          opacity: 1;
-      }
-  }
-
-  .app-banner3 p {
-      opacity: 1; /* Reset opacity */
-  }
-
-  /* Optional: You can keep your custom animation if you prefer it over AOS animations */
-  @keyframes slideInFromLeft {
-      0% {
-          transform: translateX(-100%);
-          opacity: 0;
-      }
-      100% {
-          transform: translateX(0);
-          opacity: 1;
-      }
-  }
-  
