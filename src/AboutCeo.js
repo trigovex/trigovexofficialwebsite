@@ -25,7 +25,7 @@ const AboutCeo = () => {
       </div>
 
       {/* CMO Section */}
-      <div className="profile-card">
+      {/* <div className="profile-card">
         <div className="profile-content">
           <h2 className="profile-title">Meet</h2>
           <h3 className="profile-name">Dora Babu Bommireddy</h3>
@@ -72,7 +72,7 @@ const AboutCeo = () => {
             alt="CMO" 
           />
         </div>
-      </div>
+      </div> */}
       
     </div>
   );
