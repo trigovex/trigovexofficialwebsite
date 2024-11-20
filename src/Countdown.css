@@ -171,13 +171,8 @@
   .gradient-text {
     background: linear-gradient(
       300deg,
-      #ff0000,    /* Red */
-      #ff8c00,    /* Orange */
-      #ffd700,    /* Gold */
       #4caf50,    /* Green */
-      #00bcd4,    /* Blue */
-      #2196f3,    /* Light Blue */
-      #9c27b0     /* Purple */
+      #00bcd4    /* Blue */    /* Purple */
     );
     background-size: 300% 300%;
     -webkit-background-clip: text;

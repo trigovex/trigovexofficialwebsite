@@ -6,7 +6,6 @@ const Services = () => {
     <div className="finance-info-section">
       <div className="finance-header">
         <h2>Our <span className="highlight">Services</span></h2>
-        <p className="finance-subtitle">We offer a wide range of services to meet your needs</p>
       </div>
 
       <div className="finance-container">
