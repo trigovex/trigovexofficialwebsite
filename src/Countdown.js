@@ -6,7 +6,7 @@ import './Countdown.css'; // Make sure to create this CSS file
 
 const Countdown = () => {
   // Set your launch date here
-  const launchDate = new Date('2025-01-25T00:00:00'); // Adjust the date and time as needed
+  const launchDate = new Date('2025-01-20T00:00:00'); // Adjust the date and time as needed
 
   const calculateTimeLeft = () => {
     const now = new Date();
@@ -19,8 +19,8 @@ const Countdown = () => {
         months: Math.floor(difference / (1000 * 60 * 60 * 24 * 30)), // Approximate
         days: Math.floor((difference / (1000 * 60 * 60 * 24)) % 30),
         hours: Math.floor((difference / (1000 * 60 * 60)) % 24),
-        min: Math.floor((difference / 1000 / 60) % 60),
-        sec: Math.floor((difference / 1000) % 60),
+        mins: Math.floor((difference / 1000 / 60) % 60),
+        secs: Math.floor((difference / 1000) % 60),
       };
     } else {
       timeLeft = {
@@ -67,7 +67,7 @@ const Countdown = () => {
               </div>
               <div className="countdown-label">{unit}</div>
             </div>
-            {unit !== 'sec' && <div className="countdown-separator">:</div>}
+            {unit !== 'secs' && <div className="countdown-separator">:</div>}
           </React.Fragment>
         ))}
       </div>

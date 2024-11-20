@@ -13,7 +13,7 @@
   }
   
   .countdown-title {
-    padding-top: 75px;
+    padding-top: 60px;
     color: black;
     font-size: 3.5rem;
     font-weight: 650;
@@ -92,10 +92,11 @@
   /* Responsive Design */
   @media (max-width: 768px) {
     .countdown-container {
-      padding: 2rem 1rem;
+      padding: 2rem 1.2rem;
     }
   
     .countdown-item {
+    margin: 10px;
       min-width: 90px;
       padding: 1rem;
     }
