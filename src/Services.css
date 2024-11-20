@@ -143,8 +143,7 @@
   .finance-container {
     grid-template-columns: 1fr; /* Display 1 card per row */
     gap: 1.5rem; /* Adjust the gap for better spacing */
-    padding: 10px;
-    height: fit-content; /* Add padding for better alignment */
+    padding: 10px; /* Add padding for better alignment */
   }
 
   .finance-card {
@@ -153,5 +152,10 @@
 
   .card-content {
     padding: 1.5rem; /* Adjust padding for smaller cards */
+  }
+  .learn-more {
+    padding: 0.3rem 1rem; /* Reduce padding */
+    font-size: 0.9rem; /* Reduce font size */
+    border-radius: 4px; /* Slightly smaller border radius */
   }
 }
