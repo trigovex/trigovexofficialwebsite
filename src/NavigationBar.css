@@ -31,21 +31,23 @@
     color: #41d79e !important;
   }
   
-  .btn-danger {
-    background-color: white;
+  .btn-jatayu {
+    padding: 12px 30px;
+    font-size: 1.2rem;
+    font-weight: 600;
+    border-radius: 15px;
     border: none;
-    padding: 0.5rem 1rem;
-    backdrop-filter: blur(10px);
-    -webkit-backdrop-filter: blur(10px);
-    border-radius: 10px;
-    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+    background-color: white;
+    color: #41d79e;
+    letter-spacing: 1px;
     transition: all 0.3s ease;
-    color: black;
+    box-shadow: 0 4px 15px rgba(76, 175, 80, 0.3);
   }
   
-  .btn-danger:hover {
-    background-color: #41d79e;
-    color: black;
+  .btn-jatayu:hover {
+    background-color: white;
+    color: #41d79e;
+    transform: scale(1.02);
   }
   
   @media (max-width: 768px) {

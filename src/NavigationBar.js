@@ -50,7 +50,7 @@ const NavigationBar = () => {
               <Link className="nav-link" to="/careers">Careers</Link>
             </li>
           </ul>
-          <button className="btn btn-danger">Contact Us</button>
+          <button className="btn btn-jatayu">Jatayu 🦅</button>
         </div>
       </div>
     </nav>
