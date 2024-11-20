@@ -34,8 +34,7 @@
 }
 .separator-image {
   width: 100%; /* Ensure images take the full width of their column */
-  height: auto;
-  margin-top: 70px;
+  height: auto; /* Maintain aspect ratio */
 }
 
 /* Hide the vertical separator image by default */

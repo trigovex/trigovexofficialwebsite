@@ -46,7 +46,7 @@ root.render(
             <Applications />
             <BusinessTypes />
             <AboutCeo />
-            {/* <MeetingScheduler /> */}
+            <MeetingScheduler />
           </>} />
           {/* Separate route for MeetingForm */}
           <Route path="/meeting-form" element={<MeetingForm />} />
