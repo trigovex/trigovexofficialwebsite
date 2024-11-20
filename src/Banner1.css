@@ -1,0 +1,143 @@
+/* Banner1 Component Specific Styles */
+body, html {
+  margin: 0;
+  padding: 0;
+  overflow-x: hidden; /* Prevent horizontal overflow globally */
+}
+
+.app-banner {
+  background-image: url('./images/NewGradient1.png');
+  background-size: cover;
+  background-position: center;
+  height: 95vh; /* Fixed height based on viewport height */
+  padding-left: 15px;
+  padding-right: 15px; /* Added padding-top to create space below navbar */
+  position: relative; /* Keep the container's position relative */
+  overflow: hidden; /* Prevent content from exceeding the container */
+  max-width: 100%; /* Ensure the banner does not exceed the viewport width */
+}
+
+.app-container-fluid {
+  padding-left: 15px;
+  padding-right: 15px;
+}
+
+.new-tag {
+  background-color: #f2f8f5;
+  display: inline-block;
+  padding: 5px 10px;
+  border-radius: 20px;
+  font-size: 14px;
+  color: #333;
+}
+
+.banner-title {
+  font-size: 3.5rem;
+  font-weight: 600;
+  line-height: 1.2;
+}
+
+.highlighted-text-wrapper {
+  display: inline-block;
+  height: 60px; /* Fixed height to prevent the container from moving */
+  vertical-align: middle;
+}
+
+.highlighted-text {
+  color: #41d79e;
+  display: inline-block;
+  white-space: nowrap;
+  overflow: hidden;
+}
+
+.banner-description {
+  font-size: 1.2rem;
+  margin-top: 20px;
+  color: #666;
+}
+
+.download-btn {
+  margin-top: 20px;
+  background-color: #41d79e;
+  border: none;
+  padding: 10px 20px;
+  border-radius: 10px;
+  font-size: 1.2rem;
+  color: white;
+}
+
+.user-image {
+  width: 40px;
+  height: 40px;
+  border-radius: 50%;
+  margin-right: 10px;
+}
+
+.download-count {
+  font-size: 1rem;
+  color: #666;
+  margin-left: 10px;
+}
+
+.phone-image {
+  max-width: 100%;
+  height: auto; /* Ensure it scales properly */
+  min-height: 200px; /* Set a minimum height */
+  margin-top: 20px;
+  animation: zoomInOut 4s infinite; /* 4 seconds for one full cycle */
+}
+
+@keyframes zoomInOut {
+  0% {
+    transform: scale(1); /* Start at normal size */
+  }
+  50% {
+    transform: scale(1.1); /* Zoom in at 50% (2 seconds) */
+  }
+  100% {
+    transform: scale(1); /* Zoom out back to normal size */
+  }
+}
+
+@media (min-width: 768px) {
+  .text-section {
+    padding-left: 120px; /* Set left padding for desktop view */
+  }
+}
+
+/* Media Queries for Responsiveness */
+@media (max-width: 768px) {
+  .app-banner {
+    height: auto; /* Allow height to adjust */
+    padding: 20px; /* Add some padding for smaller screens */
+    margin-top: 15px; /* Adjusted padding-top for mobile view */
+  }
+
+  .banner-title {
+    font-size: 2.5rem; /* Smaller title font for mobile */
+  }
+
+  .banner-description {
+    font-size: 1rem; /* Smaller description font for mobile */
+  }
+
+  .download-btn {
+    font-size: 1rem; /* Smaller button font for mobile */  }
+
+  .phone-image {
+    margin-top: 10px; /* Adjust top margin on smaller screens */
+  }
+
+  /* Ensure container width does not overflow on smaller screens */
+  .app-container-fluid, 
+  .container-fluid {
+    padding-left: 10px;
+    padding-right: 10px;
+    max-width: 100vw; /* Ensure full width fits inside viewport */
+  }
+
+  .row {
+    margin-left: 0;
+    margin-right: 0;
+  }
+}
