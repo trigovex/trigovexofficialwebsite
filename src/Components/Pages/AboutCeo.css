@@ -1,126 +1,131 @@
-/* General Styling */
-.about-ceo {
-  font-family: 'Poppins', sans-serif;
-  color: #31a76f;
+.about-ceo-container {
+  padding: 60px 20px;
+  max-width: 1200px;
+  margin: 0 auto;
 }
 
-/* CEO Info Box */
-.ceo-info {
-  background-color: #f8f9fa;
-  border-left: 5px solid #31a76f;
-  box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.1);
-  min-height: 300px;
-  color: #000;
-  padding: 20px;
+.main-title {
+  text-align: center;
+  font-size: 2.8rem;
+  color: #333;
+  margin-bottom: 50px;
+  font-weight: 600;
+}
+
+.profile-card {
   display: flex;
-  flex-direction: column;
-  justify-content: center;
+  align-items: center;
+  gap: 40px;
+  margin-bottom: 60px;
+  padding: 40px;
+  background: linear-gradient(135deg, rgba(255, 255, 255, 0.1), rgba(255, 255, 255, 0.05));
+  border-radius: 20px;
+  border: 1px solid rgba(255, 255, 255, 0.18);
+  box-shadow: 0 8px 32px 0 rgba(0, 0, 0, 0.1);
 }
 
-.contact-button {
-  background-color: #31a76f;
+.profile-image {
+  flex: 0 0 300px;
+}
+
+.profile-image img {
+  width: 100%;
+  height: 300px;
+  object-fit: cover;
+  border-radius: 15px;
+  box-shadow: 0 8px 20px rgba(0, 0, 0, 0.2);
+}
+
+.profile-content {
+  flex: 1;
+  padding: 0 40px;
+}
+
+.profile-title {
+  font-size: 2rem;
+  background: linear-gradient(135deg, #31a76f, #218838);
+  -webkit-background-clip: text;
+  background-clip: text;
+  -webkit-text-fill-color: transparent;
+  margin-bottom: 15px;
+  font-weight: 600;
+}
+
+@supports not (background-clip: text) {
+  .profile-title {
+    color: #31a76f;
+  }
+}
+
+.profile-name {
+  font-size: 1.5rem;
+  color: #666;
+  margin-bottom: 25px;
+}
+
+.profile-description {
+  color: #555;
+  line-height: 1.8;
+  margin-bottom: 30px;
+  text-align: justify;
+}
+
+.contact-btn {
+  padding: 12px 30px;
+  background: linear-gradient(135deg, #31a76f, #218838);
   color: white;
   border: none;
-  padding: 6px 12px;
-  font-size: 14px;
+  border-radius: 8px;
+  font-size: 1rem;
   cursor: pointer;
-  border-radius: 4px;
-  width: max-content;
+  transition: all 0.3s ease;
 }
 
-.contact-button:hover {
-  background-color: #218838;
+.contact-btn:hover {
+  transform: translateY(-2px);
+  box-shadow: 0 5px 15px rgba(49, 167, 111, 0.4);
 }
 
-/* Heading Styles */
-.heading-primary {
-  color: darkorange;
-  font-size: 3rem;
-}
-
-.heading-secondary {
-  color: #41d79e;
-  font-size: 2.8rem;
-}
-
-/* Paragraph Text Styling */
-.ceo-info p {
-  color: #41d79e;
-  font-size: 1.2rem;
-}
-
-/* Icon Section */
-.icon-section .ceo-icon {
-  background-color: #41d79e;
-  border-radius: 50%;
-  color: #fff;
-  padding: 10px;
-  font-size: 24px;
-}
-
-/* Values Section */
-.ceo-values .value {
-  color: #41d79e;
-  font-size: 16px;
-  text-align: center;
-}
-
-.value-icon {
-  font-size: 28px;
-  color: #41d79e;
-  padding-top: 20px;
-  margin-bottom: 10px;
-}
-
-/* CEO Image Styling */
-.ceo-image {
-  margin-top: 10px;
-  width: 70%;
-  max-width: 250px;
-  height: auto;
-}
-
-/* CEO Name Background */
-.ceo-name {
-  background: linear-gradient(to right, #41d79e, #009e5f);
-  font-size: 1.2rem;
-  width: auto;
-  padding: 5px 10px;
-  color: #fff;
-}
-
-/* Responsive Styling */
 @media (max-width: 768px) {
-  .heading-primary {
-      font-size: 2.2rem; /* Smaller font for h1 on mobile */
+  .profile-card {
+    flex-direction: column;
+    text-align: center;
+    padding: 20px;
   }
-  
-  .heading-secondary {
-      font-size: 2rem; /* Smaller font for h2 on mobile */
+
+  .profile-card {
+    display: flex;
+    flex-direction: column;
   }
-  
-  .ceo-info p {
-      font-size: 1rem; /* Adjust paragraph font size */
+
+  .profile-image {
+    flex: 0 0 auto;
+    width: 200px;
+    margin: 0 auto;
+    order: -1;
   }
-  
-  /* Stack image and content vertically on mobile */
-  .about-ceo .row.align-items-center {
-      flex-direction: column;
+
+  .profile-content {
+    order: 2;
   }
-  
-  .ceo-image {
-      width: 50%; /* Smaller image size on mobile */
-      max-width: 150px;
-      margin: auto; /* Center the image */
+
+  .profile-image img {
+    height: 200px;
   }
-  
-  .contact-button {
-      font-size: 12px;
-      padding: 4px 8px; /* Smaller padding for mobile */
+
+  .main-title {
+    font-size: 2.2rem;
   }
-  
-  .ceo-info {
-      min-height: auto;
-      padding: 15px;
+
+  .profile-title {
+    font-size: 1.8rem;
+  }
+
+  .profile-name {
+    font-size: 1.3rem;
+  }
+
+  .profile-content {
+    padding: 15px;
   }
 }

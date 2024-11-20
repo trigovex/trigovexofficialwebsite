@@ -1,90 +1,161 @@
-/* Main card container */
-.services-card {
-    background-color: rgba(255, 255, 255, 0.2); /* Semi-transparent white for glass effect */
-    border-radius: 10px;
-    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
-    padding: 20px;
-    margin: 0 auto;
-    transition: transform 0.3s ease, box-shadow 0.3s ease; /* Smooth transition for zoom-in and shadow */
-    max-width: 100%;
-    position: relative;
-    overflow: hidden;
-    backdrop-filter: blur(10px); /* Apply blur effect for glassmorphism */
+.finance-info-section {
+  padding: 100px 5%;
+  background: white;
+  position: relative;
+  overflow: hidden;
+}
+
+.finance-header {
+  text-align: center;
+  margin-bottom: 80px;
+  position: relative;
+}
+
+.finance-header h2 {
+  font-size: 3rem;
+  color: #1a2a6c;
+  margin-bottom: 1.5rem;
+  font-weight: 700;
+}
+
+.finance-header .highlight {
+  background: linear-gradient(120deg, #64ffda, #1a2a6c);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+}
+
+.finance-subtitle {
+  font-size: 1.4rem;
+  color: #666;
+  max-width: 700px;
+  margin: 0 auto;
+  line-height: 1.6;
+}
+
+.finance-container {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 2rem;
+  max-width: 1400px;
+  margin: 0 auto;
+  padding: 20px;
+}
+
+.finance-card {
+  position: relative;
+  border-radius: 20px;
+  overflow: hidden;
+  background: #fff;
+  box-shadow: 0 15px 35px rgba(0, 0, 0, 0.1);
+  transition: all 0.3s ease;
+  height: 380px;
+  width: auto;
+}
+
+.finance-card:hover {
+  transform: translateY(-10px);
+  box-shadow: 0 20px 40px rgba(0, 0, 0, 0.2);
+}
+
+.finance-card img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  transition: transform 0.5s ease;
+}
+
+.finance-card:hover img {
+  transform: scale(1.1);
+}
+
+.card-overlay {
+  position: absolute;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  background: linear-gradient(
+    to bottom,
+    rgba(26, 42, 108, 0.2),
+    rgba(26, 42, 108, 0.9)
+  );
+  z-index: 1;
+}
+
+.card-content {
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  right: 0;
+  padding: 2rem;
+  z-index: 2;
+  color: white;
+  transform: translateY(60px);
+  transition: transform 0.3s ease;
+}
+
+.finance-card:hover .card-content {
+  transform: translateY(0);
+}
+
+.card-content h3 {
+  font-size: 1.8rem;
+  margin-bottom: 1rem;
+  font-weight: 600;
+}
+
+.card-content p {
+  font-size: 1.1rem;
+  line-height: 1.6;
+  margin-bottom: 1.5rem;
+  opacity: 0;
+  transform: translateY(20px);
+  transition: all 0.3s ease 0.1s;
+}
+
+.finance-card:hover .card-content p {
+  opacity: 1;
+  transform: translateY(0);
+}
+
+.learn-more {
+  background: transparent;
+  border: 2px solid #64ffda;
+  color: #64ffda;
+  padding: 0.8rem 1.5rem;
+  border-radius: 5px;
+  font-size: 1rem;
+  font-weight: 600;
+  cursor: pointer;
+  transition: all 0.3s ease;
+  opacity: 0;
+  transform: translateY(20px);
+}
+
+.finance-card:hover .learn-more {
+  opacity: 1;
+  transform: translateY(0);
+}
+
+/* Responsive Design */
+/* Responsive Design */
+@media (max-width: 968px) {
+  .finance-container {
+    grid-template-columns: 1fr; /* Display 1 card per row */
+    gap: 1.5rem; /* Adjust the gap for better spacing */
+    padding: 10px; /* Add padding for better alignment */
   }
-  
-  /* Set the background color of the parent/container */
-  
-  /* Hover effect for the card */
-  .services-card:hover {
-    transform: scale(1.05); /* Zoom in the entire card */
-    box-shadow: 0 6px 12px rgba(0, 0, 0, 0.2); /* Elevate the shadow effect */
+
+  .finance-card {
+    height: auto; /* Adjust height for smaller screens */
   }
-  
-  /* Flex container for image and title */
-  .d-flex {
-    display: flex;
-    align-items: center;
+
+  .card-content {
+    padding: 1.5rem; /* Adjust padding for smaller cards */
   }
-  
-  /* Image section styling */
-  .image-section {
-    width: 60px;
-    height: 60px;
-    border-radius: 10px;
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    margin-right: 15px;
-    margin: 40px;
+  .learn-more {
+    padding: 0.3rem 1rem; /* Reduce padding */
+    font-size: 0.9rem; /* Reduce font size */
+    border-radius: 4px; /* Slightly smaller border radius */
   }
-  
-  .body {
-    font-family: 'Poppins', sans-serif;
-  }
-  
-  /* Image styling */
-  .image-section img {
-    width: 100px;
-    height: 100px;
-    margin: 5px;
-  }
-  
-  /* Title section styling */
-  .title-section {
-    font-family: 'Poppins', sans-serif;
-    font-size: 1.3rem;
-    margin: 0;
-    color: #09b875;
-    font-weight: bold;
-  }
-  
-  /* Content section styling (for paragraph and button) */
-  .content-section {
-    margin-top: 15px;
-  }
-  
-  .content-section p {
-    font-family: 'Poppins', sans-serif;
-    font-size: 1.1rem;
-    color: black;
-    margin-bottom: 10px;
-    word-wrap: break-word;
-  }
-  
-  /* Read more button styling */
-  .read-more {
-    font-family: 'Poppins', sans-serif;
-    color: #41d79e;
-    background: none;
-    border: 1px solid #41d79e;
-    border-radius: 20px;
-    padding: 5px 15px;
-    cursor: pointer;
-    transition: background-color 0.3s ease, color 0.3s ease;
-  }
-  
-  .read-more:hover {
-    background-color: #41d79e;
-    color: white;
-  }
-  
+}

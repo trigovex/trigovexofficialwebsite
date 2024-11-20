@@ -2,7 +2,6 @@ import React from 'react';
 import Lottie from 'lottie-react'; // Import Lottie
 import animationData from '../../images/animation1.json'; // Adjust the path to your JSON file44
 import './Solutions.css';
-
 const Solutions = () => {
   return (
     <div className="solutions-container my-5">
@@ -68,6 +67,14 @@ const Solutions = () => {
             </p>
           </div>
         </div>
+        {/* <div className="timeline-animation-container">
+        <Lottie 
+          animationData={lottie} 
+          loop={true}
+          style={{ width: '100vw', position: 'relative', left: '50%', transform: 'translateX(-50%)' }}
+        />
+      </div> */}
+        
       </div>
     </div>
   );

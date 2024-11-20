@@ -4,6 +4,7 @@ import './Timeline.css'; // Assuming you create a separate CSS file for styling
 import Image from '../../images/sdlc2.png';
 import tick from '../../images/tickmark.svg';
 
+
 const Timeline = () => {
     return (
         <div className="container my-5">
@@ -11,6 +12,7 @@ const Timeline = () => {
             <h1 className="text-center mb-4" style={{ fontFamily: 'Poppins', fontWeight: '600', paddingBottom: '50px' }}>
     Our Software Approach To Clients
 </h1>
+
 
             <div className="row">
                 {/* Timeline Section */}

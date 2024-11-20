@@ -49,7 +49,7 @@ const Banner1 = () => {
             We create experiences that transform brands, grow businesses, and make people's lives better. Let's create something special together.
           </p>
           <button className="btn btn-success download-btn">
-            Get Started Now
+            Schedule Meeting
           </button>
         </div>
 
