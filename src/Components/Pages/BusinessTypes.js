@@ -114,20 +114,22 @@ const BusinessTypes = () => {
             </div>
           </div>
         </div>
-        {/* Bottom SVG image */}
-        <img 
-          src={line} 
-          alt="Horizontal Line" 
-          style={{ 
-            display: 'block', 
-            margin: '20px auto', 
-            transform: 'scaleX(-1)', // Reverse the SVG image
-            maxWidth: '100%', // Ensure it scales down on mobile
-            height: 'auto', // Maintain aspect ratio
-          }} 
-        />
+        {/* Wrap the bottom SVG image and the closing div in a fragment */}
+        <>
+          <img 
+            src={line} 
+            alt="Horizontal Line" 
+            style={{ 
+              display: 'block', 
+              margin: '20px auto', 
+              transform: 'scaleX(-1)', // Reverse the SVG image
+              maxWidth: '100%', // Ensure it scales down on mobile
+              height: 'auto', // Maintain aspect ratio
+            }} 
+          />
+        </>
       </div>
-    </div>
+   
   );
 };
 
