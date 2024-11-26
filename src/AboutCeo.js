@@ -1,5 +1,6 @@
 import React from 'react';
 import './AboutCeo.css';
+import ceoimage from './images/TrigovexSquare.jpg';
 
 const AboutCeo = () => {
   return (
@@ -10,8 +11,7 @@ const AboutCeo = () => {
       <div className="profile-card">
         <div className="profile-image">
           <img 
-            src="https://media.licdn.com/dms/image/v2/D4D03AQEQujwvNkQ2VQ/profile-displayphoto-shrink_800_800/profile-displayphoto-shrink_800_800/0/1719767758276?e=1735776000&v=beta&t=SqpuRIbnw_MVia_RlF4sTjnYJH7xgE_yfWS7vMmAPNI" 
-            alt="CEO" 
+            src={ceoimage}
           />
         </div>
         <div className="profile-content">

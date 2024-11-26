@@ -2,7 +2,7 @@ import React from 'react';
 import './NavigationBar.css';
 import 'bootstrap/dist/css/bootstrap.min.css'; // Import Bootstrap CSS
 import { Link } from 'react-router-dom'; // Import Link from react-router-dom
-import logo from './images/trigovexnew2.jpg'; // Adjust the path to your logo image
+import logo from './images/TrigovexRectangle.png'; // Adjust the path to your logo image
 
 const NavigationBar = () => {
   return (
