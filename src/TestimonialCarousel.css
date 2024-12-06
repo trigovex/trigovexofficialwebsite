@@ -15,7 +15,10 @@
 .testimonial-card:hover {
   transform: translateY(-5px);
   box-shadow: 0 12px 40px 0 rgba(31, 38, 135, 0.2);
-  border-color: #41d79e;
+}
+
+.testimonial-card:focus {
+  outline: none;
 }
 
 /* Style for company name */

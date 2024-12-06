@@ -23,12 +23,17 @@ const statsData = [
 const ServiceStats = () => {
     return (
         <div className="container">
-            <h1 className="text-center my-4" style={{ fontFamily: 'Poppins', fontWeight: '600',paddingBottom: '30PX' }}>
+            <h1 className="text-center my-4" style={{ fontFamily: 'Poppins', fontWeight: '600', paddingBottom: '30PX' }}>
                 TRIGOVEX's JOURNEY
             </h1> {/* Title */}
             <div className="row">
                 {statsData.map((stat, index) => (
-                    <div key={index} className="col-md-3 col-sm-6 mb-4">
+                    <div 
+                        key={index} 
+                        className="col-md-3 col-sm-6 mb-4" 
+                        data-aos="fade-right" 
+                        data-aos-delay={index * 100}
+                    >
                         <div className="card">
                             <div className="card-body d-flex align-items-center">
                                 <img 

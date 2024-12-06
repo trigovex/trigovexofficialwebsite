@@ -1,10 +1,15 @@
-import React from 'react';
+import React, { useEffect } from 'react';
 import 'bootstrap/dist/css/bootstrap.min.css';
 import './Applications.css';
 import foodlogo from './images/foodlogo.png';
 import blurimage from './images/TrigovexSquare.png';
+import AOS from 'aos';
 
 function Applications() {
+  useEffect(() => {
+    AOS.init(); // Initialize AOS
+  }, []);
+
   const foodDeliveryData = [
     {
       title: "User Application",
@@ -51,7 +56,11 @@ function Applications() {
         {foodDeliveryData.map((card, index) => (
           <React.Fragment key={index}>
             <div className="col-md-3 col-lg-2 my-2 d-flex justify-content-center">
-              <div className="applications-card shadow border-0 text-center">
+              <div 
+                className="applications-card shadow border-0 text-center" 
+                data-aos={window.innerWidth > 768 ? 'fade-right' : 'fade-down'} // AOS effect based on screen size
+                data-aos-delay={window.innerWidth > 768 ? index * 300 : 0} // Delay for desktop view
+              >
                 <div className="card-body d-flex flex-column align-items-center justify-content-center">
                   <div
                     className="applications-icon-container mb-3"
@@ -95,7 +104,11 @@ function Applications() {
         {eCommerceData.map((card, index) => (
           <React.Fragment key={index}>
             <div className="col-md-3 col-lg-2 my-2 d-flex justify-content-center">
-              <div className="applications-card shadow border-0 text-center">
+              <div 
+                className="applications-card shadow border-0 text-center" 
+                data-aos={window.innerWidth > 768 ? 'fade-right' : 'fade-down'} // AOS effect based on screen size
+                data-aos-delay={window.innerWidth > 768 ? index * 300 : 0} // Delay for desktop view
+              >
                 <div className="card-body d-flex flex-column align-items-center justify-content-center">
                   <div
                     className="applications-icon-container mb-3"

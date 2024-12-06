@@ -138,7 +138,6 @@
 }
 
 /* Responsive Design */
-/* Responsive Design */
 @media (max-width: 968px) {
   .finance-container {
     grid-template-columns: 1fr; /* Display 1 card per row */
@@ -147,7 +146,8 @@
   }
 
   .finance-card {
-    height: auto; /* Adjust height for smaller screens */
+    height: 300px; /* Set a fixed height for cards */
+    width: 100%; /* Ensure cards take full width */
   }
 
   .card-content {

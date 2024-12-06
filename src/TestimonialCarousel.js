@@ -2,42 +2,39 @@ import React, { useState, useEffect } from 'react';
 import 'bootstrap/dist/css/bootstrap.min.css';
 import 'bootstrap/dist/js/bootstrap.bundle.min';
 import './TestimonialCarousel.css';
+import AOS from 'aos';
+import 'aos/dist/aos.css';
 
 const testimonials = [
   {
     company: "INSPIRE FROM BOOKS",
     logo: "https://yt3.googleusercontent.com/pdHP9FkxmAGCMldaFq2iZbdtC3R2owXoR6UCellrgUCnovge2MoM_jgPtD6QYFkU2BsE3Qcxyw=s160-c-k-c0x00ffffff-no-rj",
     rating: 5,
-    feedback:
-      "Trigovex Technologies was able to communicate effectively with the client, delivering on all project requirements. The client notes that Trigovex works well as a team and is very responsive.",
+    feedback: "Incredible service and support throughout the entire project. The team was always available to address our concerns and provided valuable insights. Their expertise in the field was evident, and they guided us every step of the way.",
   },
   {
     company: "MY HOMEDEL",
     logo: "https://trigovex.com/assets/img/section-img/MyHomeDel.jpg",
     rating: 5,
-    feedback:
-      "Trigovex Technologies was able to communicate effectively with the client, delivering on all project requirements. The client notes that Trigovex works well as a team and is very responsive.",
+    feedback: "Exceptional assistance and prompt delivery of all project needs. The communication was clear and consistent, which made the process smooth. They took the time to understand our requirements and delivered beyond our expectations.",
   },
   {
     company: "PRANALI EYE CARE HOSPITAL",
     logo: "https://cdn5.vectorstock.com/i/1000x1000/92/04/eye-care-logo-template-vector-12209204.jpg",
     rating: 5,
-    feedback:
-      "Trigovex Technologies was able to communicate effectively with the client, delivering on all project requirements. The client notes that Trigovex works well as a team and is very responsive.",
+    feedback: "Skilled approach and clear communication made the project a triumph. The team was proactive in identifying potential challenges and offered effective solutions. Their professionalism and commitment to quality were evident.",
   },
   {
     company: "HOFFEN PLASTICS",
     logo: "https://trigovex.com/assets/img/section-img/HoffenPlastics.png",
     rating: 5,
-    feedback:
-      "Trigovex Technologies was able to communicate effectively with the client, delivering on all project requirements. The client notes that Trigovex works well as a team and is very responsive.",
+    feedback: "Fantastic collaboration and quick responses throughout the project. The team was always ready to adapt to our changing needs and provided innovative solutions. Their attention to detail and commitment to excellence were truly impressive.",
   },
   {
     company: "KARTHIKEYA",
     logo: "https://i.pinimg.com/736x/16/8e/d3/168ed37e1cc055c818b99ff94c77bac0.jpg",
     rating: 5,
-    feedback:
-      "Trigovex Technologies was able to communicate effectively with the client, delivering on all project requirements. The client notes that Trigovex works well as a team and is very responsive.",
+    feedback: "Remarkable outcomes and superb communication. They surpassed our expectations in every aspect, from planning to execution. The team's expertise and dedication were evident in the quality of their work. We appreciated their willingness.",
   }
 ];
 
@@ -52,6 +49,11 @@ const chunkTestimonials = (array, chunkSize) => {
 
 const TestimonialCarousel = () => {
   const [chunkSize, setChunkSize] = useState(3); // Default to 3 for larger screens
+
+  // Initialize AOS
+  useEffect(() => {
+    AOS.init({ duration: 1000 });
+  }, []);
 
   // Update chunk size based on screen width
   useEffect(() => {
@@ -74,7 +76,7 @@ const TestimonialCarousel = () => {
   const groupedTestimonials = chunkTestimonials(testimonials, chunkSize); // Group testimonials
 
   return (
-    <div className="container py-5">
+    <div className="container py-5" data-aos="fade-up">
       <h1 className="text-center mb-5" style={{ 
         fontFamily: 'Poppins', 
         fontWeight: '600',
@@ -89,7 +91,7 @@ const TestimonialCarousel = () => {
             <div className={`carousel-item ${index === 0 ? "active" : ""}`} key={index}>
               <div className="row justify-content-center">
                 {group.map((testimonial, idx) => (
-                  <div className="col-md-4 col-12 mb-4" key={idx}>
+                  <div className="col-md-4 col-12 mb-4" key={idx} data-aos="fade-up">
                     <div className="card testimonial-card">
                       <div className="d-flex align-items-center mb-3">
                         <img
@@ -146,6 +148,5 @@ const TestimonialCarousel = () => {
     </div>
   );
 };
-
 
 export default TestimonialCarousel;
