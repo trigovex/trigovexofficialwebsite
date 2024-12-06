@@ -21,6 +21,7 @@ import Solutions from './Solutions';
 import './Solutions.css';
 import Countdown from './Countdown';
 import './Countdown.css';
+import Contact from './Contact';
 import MeetingScheduler from './MeetingScheduler';
 import MeetingForm from './MeetingForm'; // Import the new form page
 import { BrowserRouter as Router, Route, Routes } from 'react-router-dom';
@@ -46,6 +47,7 @@ root.render(
             <Applications />
             <BusinessTypes />
             <AboutCeo />
+            <Contact />
             {/* <MeetingScheduler /> */}
           </>} />
           {/* Separate route for MeetingForm */}
