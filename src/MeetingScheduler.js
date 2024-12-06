@@ -41,7 +41,7 @@ const MeetingScheduler = () => {
   const currentDate = new Date();
 
   return (
-    <div className="calender-container">
+    <div className="calender-container" style={{paddingTop:'70px'}}>
       <div className="row">
         {/* <div className="col-lg-4 col-md-6 mb-4">
         <img

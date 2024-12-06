@@ -57,6 +57,8 @@ root.render(
           <Route path="/jatayu" element={<Countdown />} />
           <Route path="/contact" element={<Contact />} />
           <Route path="/clients" element={<TestimonialCarousel />} />
+          <Route path="/meeting" element={<MeetingScheduler />} />
+          
           
         </Routes>
       </div>
