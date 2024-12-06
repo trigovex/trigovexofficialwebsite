@@ -1,10 +1,25 @@
-import React from 'react';
+import React, { useEffect, useState } from 'react';
 import './NavigationBar.css';
 import 'bootstrap/dist/css/bootstrap.min.css'; // Import Bootstrap CSS
-import { Link } from 'react-router-dom'; // Import Link from react-router-dom
+import { Link, useLocation } from 'react-router-dom'; // Import Link from react-router-dom
 import logo from './images/TrigovexRectangle.png'; // Adjust the path to your logo image
 
 const NavigationBar = () => {
+  const location = useLocation();
+  const [isOpen, setIsOpen] = useState(false); // State to manage navbar open/close
+
+  useEffect(() => {
+    window.scrollTo(0, 0);
+  }, [location]);
+
+  const handleToggle = () => {
+    setIsOpen(!isOpen); // Toggle the navbar open/close state
+  };
+
+  const handleLinkClick = () => {
+    setIsOpen(false); // Close the navbar when a link is clicked
+  };
+
   return (
     <nav className="navbar navbar-expand-lg navbar-light fixed-top">
       <div className="container" style={{
@@ -21,36 +36,35 @@ const NavigationBar = () => {
         <button
           className="navbar-toggler"
           type="button"
-          data-bs-toggle="collapse"
-          data-bs-target="#navbarNav"
+          onClick={handleToggle} // Toggle navbar on button click
           aria-controls="navbarNav"
-          aria-expanded="false"
+          aria-expanded={isOpen}
           aria-label="Toggle navigation"
         >
           <span className="navbar-toggler-icon"></span>
         </button>
-        <div className="collapse navbar-collapse justify-content-between" id="navbarNav">
+        <div className={`collapse navbar-collapse ${isOpen ? 'show' : ''}`} id="navbarNav">
           <ul className="navbar-nav mx-auto">
             <li className="nav-item">
-              <Link className="nav-link" to="/">Home</Link>
+              <Link className="nav-link" to="/" onClick={handleLinkClick}>Home</Link>
             </li>
             <li className="nav-item">
-              <Link className="nav-link" to="/about">About Us</Link> 
+              <Link className="nav-link" to="/about-us" onClick={handleLinkClick}>About Us</Link>
             </li>
             <li className="nav-item">
-              <Link className="nav-link" to="/services">Services</Link>
+              <Link className="nav-link" to="/services" onClick={handleLinkClick}>Services</Link>
             </li>
             <li className="nav-item">
-              <Link className="nav-link" to="/products">Products</Link>
+              <Link className="nav-link" to="/products" onClick={handleLinkClick}>Products</Link>
             </li>
             <li className="nav-item">
-              <Link className="nav-link" to="/gallery">Gallery</Link>
+              <Link className="nav-link" to="/clients" onClick={handleLinkClick}>Our Clients</Link>
             </li>
             <li className="nav-item">
-              <Link className="nav-link" to="/careers">Careers</Link>
+              <Link className="nav-link" to="/contact" onClick={handleLinkClick}>Contact Us</Link>
             </li>
           </ul>
-          <button className="btn btn-jatayu">Jatayu 🦅</button>
+          <Link to="/jatayu" className="btn btn-jatayu" onClick={handleLinkClick}>Jatayu ✨</Link>
         </div>
       </div>
     </nav>

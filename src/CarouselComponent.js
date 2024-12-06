@@ -6,9 +6,9 @@ import './CarouselComponent.css';
 const CarouselComponent = () => {
   return (
     <div className="text-center">
-      <h1 className="text-center mb-4" style={{ fontFamily: 'Poppins', fontWeight: '600' }}>
-        Our Products
-      </h1>
+      <div className="finance-header">
+        <h2>Our <span className="highlight">Products</span></h2>
+      </div>
       <Carousel interval={3000} pause={false}> {/* Set the interval to 3000 ms and disable pause on hover */}
         <Carousel.Item>
           <div className="carousel-item-content">

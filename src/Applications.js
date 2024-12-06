@@ -50,7 +50,7 @@ function Applications() {
     <div className="container my-5">
       {/* Food Delivery Applications Section */}
       <div className="row justify-content-center">
-        <h1 className="text-center mb-4" style={{ fontFamily: 'Poppins', fontWeight: '600', paddingBottom: '10px' }}>
+        <h1 className="text-center mb-4" style={{ fontFamily: 'Poppins', fontWeight: '600', paddingBottom: '10px', paddingTop: '20px'}}>
           TRIGOVEX's Food Delivery Application
         </h1>
         {foodDeliveryData.map((card, index) => (

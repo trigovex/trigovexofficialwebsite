@@ -81,7 +81,8 @@ const TestimonialCarousel = () => {
         fontFamily: 'Poppins', 
         fontWeight: '600',
         paddingBottom: '50px',
-        fontSize: '2.5rem'
+        fontSize: '2.5rem',
+        paddingTop: '20px',
       }}>
         What Our Clients Say
       </h1>

@@ -39,7 +39,6 @@ root.render(
             <Banner1 />
             <Timeline />
             <Services />
-            <Countdown />
             <CarouselComponent />
             <Solutions />
             <ServiceStats />
@@ -52,6 +51,13 @@ root.render(
           </>} />
           {/* Separate route for MeetingForm */}
           <Route path="/meeting-form" element={<MeetingForm />} />
+          <Route path="/about-us" element={<AboutCeo />} />
+          <Route path="/services" element={<Services />} />
+          <Route path="/products" element={<Applications />} />
+          <Route path="/jatayu" element={<Countdown />} />
+          <Route path="/contact" element={<Contact />} />
+          <Route path="/clients" element={<TestimonialCarousel />} />
+          
         </Routes>
       </div>
       <Footer />

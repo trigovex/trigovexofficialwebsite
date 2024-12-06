@@ -89,5 +89,10 @@
       text-align: left;
       width: 100%;
     }
+  
+    .btn-jatayu {
+      padding: 8px 20px;
+      font-size: 1rem;
+    }
   }
   
