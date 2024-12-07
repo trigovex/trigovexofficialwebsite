@@ -204,4 +204,13 @@ textarea {
   transform: translateY(20px);
 }
 
+@media (max-width: 600px) {
+    .contact-form {
+        padding-right: 70px; /* Adjust padding for mobile view */
+    }
+    .grid-container{
+      padding-right: 70px;
+    }
+}
+
   
