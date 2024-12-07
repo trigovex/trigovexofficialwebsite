@@ -10,8 +10,8 @@ function Footer() {
           <div className="col-md-3 col-sm-12 mb-4">
             <h5>Trigovex</h5>
             <p>
-              Location: Church Road, Above Royal Sweets, Panja Center,<br />
-              Narsapuram, Andhra Pradesh 534275
+              Location: Near Lock Down, PP Road,<br />
+              Palakollu, Andhra Pradesh 534260
             </p>
           </div>
 
