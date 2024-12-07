@@ -159,3 +159,11 @@
     border-radius: 4px; /* Slightly smaller border radius */
   }
 }
+
+@media (max-width: 768px) {
+  .card-content p {
+    margin: 0.5rem 0; /* Small margin for spacing */
+    padding: 0; /* Remove padding */
+    line-height: 1.4; /* Adjust line height for better readability */
+  }
+}

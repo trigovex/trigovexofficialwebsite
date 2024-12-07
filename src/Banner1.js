@@ -5,7 +5,9 @@ import S1 from './images/s1.png';
 import { useNavigate } from 'react-router-dom';
 
 const Banner1 = () => {
-  const words = ['Web Development', 'App Development', 'E-Commerce', 'Enterprise Solutions'];
+  const words = window.innerWidth < 768 
+    ? ['Web Dev', 'App Dev', 'E-Commerce', 'Softwares'] 
+    : ['Web Development', 'App Development', 'E-Commerce', 'Enterprise Solutions'];
   const [index, setIndex] = useState(0); // Index of the current word
   const [subIndex, setSubIndex] = useState(0); // Index for typing effect
   const [reverse, setReverse] = useState(false); // For erasing the text
