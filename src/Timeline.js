@@ -51,7 +51,7 @@ const Timeline = () => {
 
                 {/* Image Section */}
                 <div className="col-md-7 text-center">
-                    <img src={Image} alt="TRIGOVEX Image" className="img-fluid" data-aos="fade-left"/>
+                    <img src={Image} alt="TRIGOVEX Image" className="img-fluid" data-aos="fade-left" style={{paddingTop:'55px'}}/>
                 </div>
             </div>
         </div>

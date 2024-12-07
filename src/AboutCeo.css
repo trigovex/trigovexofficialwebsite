@@ -91,6 +91,10 @@
     text-align: center;
     padding: 20px;
   }
+  .profile-description {
+    margin-bottom: 15px;
+    text-align: left;
+  }
 
   .profile-card {
     display: flex;

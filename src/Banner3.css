@@ -119,3 +119,10 @@
     }
   }
   
+  .glassmorphism {
+    background: rgba(255, 255, 255, 0.1); /* Semi-transparent background */
+    border-radius: 15px; /* Rounded corners */
+    backdrop-filter: blur(10px); /* Blur effect */
+    padding: 6px; /* Padding for spacing */
+    box-shadow: 0 4px 30px rgba(0, 0, 0, 0.1); /* Subtle shadow */
+  }

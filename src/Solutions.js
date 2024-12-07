@@ -19,7 +19,7 @@ const Solutions = () => {
         <div className="col-md-5">
           <div className="challenge-box" data-aos="fade-right" data-aos-duration="1000">
             <h4 className="challenge-title mobile-centered">Digital Transformation</h4>
-            <p className="challenge-text">
+            <p className="challenge-text mobile-aligned">
               Companies struggle with outdated technology, which decreases efficiency, limits scalability, and hinders competitiveness in a fast-paced market. They must address these legacy systems to stay relevant and responsive to market demands.
             </p>
           </div>
@@ -36,7 +36,7 @@ const Solutions = () => {
         <div className="col-md-5">
           <div className="solution-box" data-aos="fade-left" data-aos-duration="1000">
             <h4 className="solution-title mobile-centered">Solution</h4>
-            <p className="solution-text">
+            <p className="solution-text mobile-aligned">
               Trigovex Technologies offers comprehensive digital transformation services, covering everything from strategy formulation to implementation. We migrate legacy systems to cloud solutions, automate workflows, and integrate digital tools.
             </p>
           </div>

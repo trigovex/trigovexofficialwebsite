@@ -144,7 +144,7 @@ const BusinessTypes = () => {
               <div style={contentStyle}>
                 <h3 style={headingStyle}>Agency Services</h3>
                 <p style={descriptionStyle}>
-                  Expand your agency’s potential by harnessing our development skills and the latest tech trends.<br/> We provide comprehensive support that enables agencies to streamline operations and maximize their offerings, ultimately delivering enhanced value to clients.
+                  Expand your agency’s potential by harnessing our development skills and the latest tech trends.<br/> We provide comprehensive support that enables agencies to streamline operations and maximize their offerings, ultimately delivering enhanced value to our clients.
                 </p>
               </div>
             </div>

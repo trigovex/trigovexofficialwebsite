@@ -66,7 +66,7 @@ function Footer() {
         <hr className="my-4 bg-light" />
 
         <div>
-          <p className="mb-0">
+          <p className="mb-0" style={{textAlign:'center'}}>
             Copyright © 2024 All Rights Reserved by Trigovex Technologies Private Limited
           </p>
         </div>

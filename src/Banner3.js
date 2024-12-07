@@ -8,8 +8,8 @@ const Banner3 = () => {
     <div className="container-fluid app-banner3">
       <div className="row align-items-center">
         <div className="col-md-5 text-section text-md-start text-center">
-          <div className="new-tag">
-            <span>Manage,</span>Monitor, and Heal Effortlessly &rarr;
+          <div className="new-tag glassmorphism">
+            <span>Manage,</span>Monitor & Heal Effortlessly &rarr;
           </div>
           <h1 className="banner-title">
          <span className="highlighted2-text">Hospital</span> Management.
@@ -19,7 +19,7 @@ const Banner3 = () => {
 
           </p>
           <button className="btn btn-success download-btn">
-            <i className="fab fa-apple"></i> $ Buy Now
+          ₹ Buy Now
           </button>
         </div>
 
