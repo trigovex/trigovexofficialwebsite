@@ -3,6 +3,8 @@ import 'bootstrap/dist/css/bootstrap.min.css';
 import 'bootstrap/dist/js/bootstrap.bundle.min';
 import './TestimonialCarousel.css';
 import AOS from 'aos';
+import homedel from './images/homdel.jpg'
+import finance from './images/finance.webp';
 import 'aos/dist/aos.css';
 
 const testimonials = [
@@ -14,7 +16,7 @@ const testimonials = [
   },
   {
     company: "MY HOMEDEL",
-    logo: "https://trigovex.com/assets/img/section-img/MyHomeDel.jpg",
+    logo: homedel,
     rating: 5,
     feedback: "Exceptional assistance and prompt delivery of all project needs. The communication was clear and consistent, which made the process smooth. They took the time to understand our requirements and delivered beyond our expectations.",
   },
@@ -25,8 +27,8 @@ const testimonials = [
     feedback: "Skilled approach and clear communication made the project a triumph. The team was proactive in identifying potential challenges and offered effective solutions. Their professionalism and commitment to quality were evident.",
   },
   {
-    company: "HOFFEN PLASTICS",
-    logo: "https://trigovex.com/assets/img/section-img/HoffenPlastics.png",
+    company: "FINTECH",
+    logo: finance,
     rating: 5,
     feedback: "Fantastic collaboration and quick responses throughout the project. The team was always ready to adapt to our changing needs and provided innovative solutions. Their attention to detail and commitment to excellence were truly impressive.",
   },

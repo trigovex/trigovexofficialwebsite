@@ -2,6 +2,8 @@ import React, { useEffect } from 'react';
 import 'bootstrap/dist/css/bootstrap.min.css';
 import './Applications.css';
 import foodlogo from './images/foodlogo.png';
+import ecomlogo from './images/e-commerce.png';
+
 import blurimage from './images/TrigovexSquare.png';
 import AOS from 'aos';
 
@@ -32,17 +34,17 @@ function Applications() {
     {
       title: "Buyer Application",
       iconColor: "#31a76f",  // Match this color to food delivery
-      image: foodlogo
+      image: ecomlogo
     },
     {
       title: "Seller Application",
       iconColor: "#31a76f",  // Match this color to food delivery
-      image: foodlogo
+      image: ecomlogo
     },
     {
       title: "Logistics App",
       iconColor: "#31a76f",  // Match this color to food delivery
-      image: foodlogo
+      image: ecomlogo
     }
   ];
 
