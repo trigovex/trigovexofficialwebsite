@@ -2,11 +2,10 @@
 import React, { useState, useEffect } from 'react';
 import './Countdown.css'; // Make sure to create this CSS file
 // If using date-fns:
-// import { differenceInSeconds } from 'date-fns';
 
 const Countdown = () => {
   // Set your launch date here
-  const launchDate = new Date('2025-01-20T00:00:00'); // Adjust the date and time as needed
+  const launchDate = new Date('2025-03-30T11:00:00'); // Adjust the date and time as needed
 
   const calculateTimeLeft = () => {
     const now = new Date();
